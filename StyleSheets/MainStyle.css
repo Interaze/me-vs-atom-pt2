@@ -59,8 +59,8 @@ h2{
     left: 0;
     color: white;
     text-align: left;
-    margin-left: -20px;
-    font-size: 8vw;
+    /*font-size: 8vw;*/
+    font-size: calc(15px + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
     background-color: orange;
 }
 
@@ -83,11 +83,35 @@ h4{
     font-size: calc(8px + (70 - 8) * ((100vw - 150px) / (1600 - 150)));
     margin: 0
 }
+
+h5{
+
+}
+
+h6{
+    margin: 0;
+    width: 80%;
+    position: absolute;
+    bottom: 2vh;
+    color: black;
+    text-align: center;
+    /*font-size: 3vw;*/
+    font-size: calc(8px + (100 - 8) * ((100vw - 150px) / (5500 - 150)));
+    background-color: white;
+}
 .card{
     background-color: black;/**/
     width: 30%;
     height: 60%;
     margin-right: 5%;
+}
+
+#wd{
+    width: 47.5%;
+}
+
+#shrt{
+    height: 50%;
 }
 
 .sectionhead{
