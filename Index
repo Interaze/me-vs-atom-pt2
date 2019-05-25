@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <div class="icon-select"></div>
+    <a id="Home"></a>
+    <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
         <div class="titleblock">
             <h1>Christopher</h1>
@@ -22,6 +23,7 @@
             <h4>& Researcher</h4>
         </div>
     </div>
+    <a id="About"></a>
     <div class="panel" name="About" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
@@ -32,21 +34,32 @@
             </div>
         </div>
     </div>
+    <a id="MyWorks"></a>
     <div class="panel" name="My Works" style="background-color: white">
         <div class="aboutcontainer">
             <div class="about">
                 <div class="wrapper" id="flx">
                 <h2>My Works</h2>
                 <div class="card"></div>
-                <div class="card"></div>
+                <div class="card" id="wd"></div>
                 <div class="card" style="margin-right:0"></div>
                 </div>
             </div>
         </div>
     </div>
+    <a id="Contact"></a>
     <div class="panel" name="Contact Me" style="background-color: black">
-
+        <div class="aboutcontainer">
+            <div class="about">
+            <div class="wrapper" id="flx">
+                <h2>Contact</h2>
+                <div class="card" id="wd"></div>
+                <div class="card" id="wd" style="margin-right:0"></div>
+                <h6>The license on this website is the standard MIT license, if you could credit me I'd be grateful. Although I'm just text, not a cop.</h6>
+            </div>
+            </div>
+        </div>
     </div>
-  <!--<script src=""></script>-->
+  <script src="Scripting/Index.js"></script>
 </body>
 </html>
