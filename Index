@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onresize="ratioadj()">
     <a id="Home"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
@@ -55,7 +55,7 @@
                 <h2>Contact</h2>
                 <div class="card" id="wd"></div>
                 <div class="card" id="wd" style="margin-right:0"></div>
-                <h6>The license on this website is the standard MIT license, if you could credit me I'd be grateful. Although I'm just text, not a cop.</h6>
+                <h6>The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
             </div>
             </div>
         </div>
