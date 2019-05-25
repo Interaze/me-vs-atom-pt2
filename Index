@@ -33,7 +33,16 @@
         </div>
     </div>
     <div class="panel" name="My Works" style="background-color: white">
-
+        <div class="aboutcontainer">
+            <div class="about">
+                <div class="wrapper" id="flx">
+                <h2>My Works</h2>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card" style="margin-right:0"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="panel" name="Contact Me" style="background-color: black">
 
