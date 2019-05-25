@@ -124,6 +124,16 @@ h6{
     transition: all 0.8s, transform 0.8s;
 }
 
+.link{
+    width: 45%;
+    height: 13%;
+    background-color: grey;
+    bottom: 10%;
+    align-self: center;
+    position: absolute;
+    bottom: 20%
+}
+
 .caption{
     bottom: 0;
     width: 100%;
