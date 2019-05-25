@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onresize="ratioadj()">
     <a id="Home"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
@@ -27,7 +27,7 @@
     <div class="panel" name="About" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
-            <div class="wrapper">
+            <div class="wrapper" id="flx">
                 <h2>About</h2>
                 <h3>"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
             </div>
@@ -40,9 +40,9 @@
             <div class="about">
                 <div class="wrapper" id="flx">
                 <h2>My Works</h2>
-                <div class="card"></div>
-                <div class="card" id="wd"></div>
-                <div class="card" style="margin-right:0"></div>
+                <div class="card" style="left:4%"></div>
+                <div class="card" style="width: 35%"></div>
+                <div class="card" style="margin-right:0; right: 4%"></div>
                 </div>
             </div>
         </div>
@@ -53,9 +53,9 @@
             <div class="about">
             <div class="wrapper" id="flx">
                 <h2>Contact</h2>
-                <div class="card" id="wd"></div>
-                <div class="card" id="wd" style="margin-right:0"></div>
-                <h6>The license on this website is the standard MIT license, if you could credit me I'd be grateful. Although I'm just text, not a cop.</h6>
+                <div class="card" id="wd" style="left:4%"><div class="caption"><h5>Email Me</h5></div></div>
+                <div class="card" id="wd" style="margin-right:0; right: 4%"><div class="caption"><h5>My GitHub</h5></div></div>
+                <h6>The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
             </div>
             </div>
         </div>
