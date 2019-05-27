@@ -7,7 +7,7 @@ function ratioadj() {
   var x = w/h;
   console.log(x);
   if (true) {
-      
+
   }
   else if (true) {
 
