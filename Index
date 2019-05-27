@@ -40,9 +40,15 @@
             <div class="about">
                 <div class="wrapper" id="flx">
                 <h2>My Works</h2>
-                <div class="card" style="left:4%"></div>
-                <div class="card" style="width: 35%"></div>
-                <div class="card" style="margin-right:0; right: 4%"></div>
+                <div class="card" style="left:4%">
+                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
+                </div>
+                <div class="card" style="width: 35%">
+                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
+                </div>
+                <div class="card" style="margin-right:0; right: 4%">
+                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
+                </div>
                 </div>
             </div>
         </div>
@@ -53,8 +59,12 @@
             <div class="about">
             <div class="wrapper" id="flx">
                 <h2>Contact</h2>
-                <div class="card" id="wd" style="left:4%"><div class="caption"><h5>Email Me</h5></div></div>
-                <div class="card" id="wd" style="margin-right:0; right: 4%"><div class="caption"><h5>My GitHub</h5></div></div>
+                <div class="card" id="wd" style="left:4%">
+                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
+                    <div class="caption"><h5>Email Me</h5></div></div>
+                <div class="card" id="wd" style="margin-right:0; right: 4%">
+                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
+                    <div class="caption"><h5>My GitHub</h5></div></div>
                 <h6>The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
             </div>
             </div>
