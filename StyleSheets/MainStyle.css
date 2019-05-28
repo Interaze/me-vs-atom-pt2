@@ -61,7 +61,6 @@ h2{
     left: 0;
     color: white;
     text-align: left;
-    /*font-size: 8vw;*/
     font-size: calc(15px + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
     background-color: orange;
 }
@@ -108,6 +107,13 @@ h6{
     background-color: black;/**/
     width: 25%;
     height: 60%;
+    position: absolute;
+}
+
+.cardlong{
+    width: 90%;
+    height: 20%;
+    background-color: white;
     position: absolute;
 }
 
@@ -161,6 +167,7 @@ h6{
 
 #wd{
     width: 45%;
+    height: 60%;
 }
 
 #shrt{
@@ -174,23 +181,12 @@ h6{
 }
 
 .about{
-/*    margin-top: 5vh;
-    margin-bottom: 5vh;   */
     width: 100%;
     height: 80vh;
     position: absolute;
     margin-bottom: 8vh;
     margin-top: 12vh;
     background-color: green;
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
 }
 
 body{
