@@ -12,7 +12,7 @@
 
 </head>
 
-<body onresize="ratioadj()">
+<body onresize="ratioadj()" onload="ratioadj()">
     <a id="Home"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
@@ -40,13 +40,13 @@
             <div class="about">
                 <div class="wrapper" id="flx">
                 <h2>My Works</h2>
-                <div class="card" style="left:4%">
+                <div class="card" style="left:4%" name="trifold">
                     <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
                 </div>
-                <div class="card" style="width: 35%">
+                <div class="card" style="width: 35%" name="trifold">
                     <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
                 </div>
-                <div class="card" style="margin-right:0; right: 4%">
+                <div class="card" style="margin-right:0; right: 4%" name="trifold">
                     <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
                 </div>
                 </div>
