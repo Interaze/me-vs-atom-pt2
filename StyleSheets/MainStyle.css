@@ -44,6 +44,11 @@
     justify-content: center;
 }
 
+.long{
+    font-size: calc(5vh + 5vw);
+    margin-top: -4%;
+}
+
 h1{
     font-size: calc(10px + (100 - 10) * ((100vw - 150px) / (1600 - 150)));
     margin: 0;
@@ -60,6 +65,7 @@ h2{
     text-align: left;
     font-size: calc(15px + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
     background-color: orange;
+    overflow: hidden;
 }
 
 h3{
@@ -109,10 +115,10 @@ h6{
 
 .cardlong{
     width: 90%;
-    height: 20%;
+    height: 20vh;
     background-color: white;
-    margin-top: 8%;
-    min-height: 20vh;
+    margin-top: 3%;
+    margin-left: 5%;
     bottom: 0;
     position: relative;
 }
