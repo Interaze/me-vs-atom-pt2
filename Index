@@ -16,7 +16,7 @@
     <a id="Home"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
-        <div class="titleblock">
+        <div class="titleblock" id="btitle">
             <h1>Christopher</h1>
             <h1>Scully</h1>
             <h4>Developer, Designer, Tutor</h4>

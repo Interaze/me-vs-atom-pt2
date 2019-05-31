@@ -28,6 +28,16 @@ function ratioadj() {
     if(document.getElementById("triR")){
         document.getElementById("triR").id = "LtriB";
     }
+    if(x<.75){
+        if(document.getElementById("reg")){
+            document.getElementById("reg").id = "btitle";
+        }
+    }
+    else {
+        if(document.getElementById("btitle")){
+            document.getElementById("btitle").id = "reg";
+        }
+    }
 
         //document.getElementsByName("trihold")[0].style.PaddingTop = "5px";
     }

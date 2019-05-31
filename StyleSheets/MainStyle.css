@@ -19,11 +19,27 @@
 
 .titleblock{
     background-color: red;
-    margin-left: 50%;
     padding-left: 4px;
     height: 70vh;
     width: auto;
     padding-top: 30vh;
+    margin-left: 50%;
+}
+
+#btitle{
+    margin: 0;
+}
+
+#btitle h1{
+    font-size: calc(3vh + 8vw);
+}
+
+#ltitle{
+
+}
+
+#stitle{
+
 }
 
 .aboutcontainer{
@@ -47,6 +63,10 @@
 .long{
     font-size: calc(5vh + 5vw);
     margin-top: -4%;
+}
+
+.longquote{
+
 }
 
 h1{
