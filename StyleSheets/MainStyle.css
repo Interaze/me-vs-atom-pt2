@@ -42,6 +42,14 @@
 
 }
 
+#longquote h3{
+    font-size: calc(2vh + 6vw);
+}
+
+#longquote h2{
+    font-size: calc(2vh + 8vw);
+}
+
 .aboutcontainer{
     background-color: grey;
     margin: 0;
@@ -60,18 +68,15 @@
     justify-content: center;
 }
 
-.long{
+#lh2{
     font-size: calc(5vh + 5vw);
     margin-top: -4%;
-}
-
-.longquote{
-
 }
 
 h1{
     font-size: calc(10px + (100 - 10) * ((100vw - 150px) / (1600 - 150)));
     margin: 0;
+    overflow: hidden;
 }
 
 h2{
@@ -83,7 +88,7 @@ h2{
     left: 0;
     color: white;
     text-align: left;
-    font-size: calc(15px + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
+    font-size: calc(2vh + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
     background-color: orange;
     overflow: hidden;
 }
@@ -203,7 +208,6 @@ h6{
     margin-right:0;
     right: 4%;
 }
-
 
 #shrt{
     height: 50%;
