@@ -128,7 +128,7 @@ h6{
     color: black;
     text-align: center;
     /*font-size: 3vw;*/
-    font-size: calc(8px + (100 - 8) * ((100vw - 150px) / (5500 - 150)));
+    font-size: calc(2vw + 1vh);
     background-color: white;
 }
 .card{

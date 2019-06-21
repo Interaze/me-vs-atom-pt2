@@ -59,6 +59,7 @@ function ratioadj() {
     if(document.getElementById("quote")){
         document.getElementById("quote").id = "longquote";
     }
+    document.getElementById("license").style.marginLeft ="10%"
     if(x<.75){
         if(document.getElementById("reg")){
             document.getElementById("reg").id = "btitle";
@@ -129,6 +130,7 @@ function ratioadj() {
       if(document.getElementById("longquote")){
           document.getElementById("longquote").id = "quote";
       }
+      document.getElementById("license").style.marginLeft ="0px"
       //document.getElementsByName("tritle")[0].className = "";
   }
 }
