@@ -57,7 +57,7 @@
     <div class="panel" name="Contact Me" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
-            <div class="wrapper">
+            <div class="wrapper" name="trihold">
                 <h2 name="tritle">Contact</h2>
                 <div class="card" id="wdL" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
