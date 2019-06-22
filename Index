@@ -18,7 +18,7 @@
     <div class="panel" name="Title" style="background-color: white">
         <div class="titleblock" id="btitle">
             <h1>Chris<wbr>topher</h1>
-            <h1>Scully</h1>
+            <h1 style="overflow: auto">Scully</h1>
             <h4>Developer, <wbr>Designer, <wbr>Tutor</h4>
             <h4>& Researcher</h4>
         </div>
