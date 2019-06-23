@@ -116,7 +116,7 @@ h5{
     width: 100%;
     margin: 0;
     bottom: 0;
-    font-size: calc(8px + (70 - 8) * ((100vw - 150px) / (1600 - 150)));
+    font-size: calc(2vh + 3vw);
 }
 
 h6{
