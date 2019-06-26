@@ -9,10 +9,7 @@
   <meta name="author" content="Christopher Scully">
 
   <link rel="stylesheet" href="StyleSheets/MainStyle.css">
-<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
-=======
->>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 
 </head>
 
@@ -20,31 +17,18 @@
     <a id="Home"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
-<<<<<<< HEAD
         <div class="titleblock" id="btitle">
             <h1>Chris<wbr>topher
             <h1 style="overflow: auto">Scully</h1>
             <h4>Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
-=======
-        <div class="titleblock">
-            <h1>Christopher</h1>
-            <h1>Scully</h1>
-            <h4>Developer, Designer, Tutor</h4>
-            <h4>& Researcher</h4>
->>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
         </div>
     </div>
     <a id="About"></a>
     <div class="panel" name="About" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
-<<<<<<< HEAD
             <h2>About</h2>
             <div class="wrapper" id="quote">
-=======
-            <div class="wrapper" id="flx">
-                <h2>About</h2>
->>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
                 <h3>"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
             </div>
             </div>
@@ -54,7 +38,6 @@
     <div class="panel" name="My Works" style="background-color: white">
         <div class="aboutcontainer">
             <div class="about">
-<<<<<<< HEAD
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold">
                 <div class="card" id="triL" name="trifold">
@@ -65,18 +48,6 @@
                 </div>
                 <div class="card" id="triR" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-=======
-                <div class="wrapper" id="flx">
-                <h2>My Works</h2>
-                <div class="card" style="left:4%" name="trifold">
-                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
-                </div>
-                <div class="card" style="width: 35%" name="trifold">
-                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
-                </div>
-                <div class="card" style="margin-right:0; right: 4%" name="trifold">
-                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
->>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
                 </div>
                 </div>
             </div>
@@ -86,7 +57,6 @@
     <div class="panel" name="Contact Me" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
-<<<<<<< HEAD
             <h2 class="tritle" name="tritle">Contact</h2>
             <div class="wrapper" name="trihold">
                 <div class="card" id="wdL" name="trifold">
@@ -102,21 +72,6 @@
             </div>
         </div>
      </div>
-=======
-            <div class="wrapper" id="flx">
-                <h2>Contact</h2>
-                <div class="card" id="wd" style="left:4%">
-                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>Email Me</h5></div></div>
-                <div class="card" id="wd" style="margin-right:0; right: 4%">
-                    <div class="hvr"><div class="wrapper" id="flx"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>My GitHub</h5></div></div>
-                <h6>The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
-            </div>
-            </div>
-        </div>
-    </div>
->>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
   <script src="Scripting/Index.js"></script>
 </body>
 </html>
