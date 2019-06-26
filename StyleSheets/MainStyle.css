@@ -150,6 +150,10 @@ h6{
     background-color: grey;
 }
 
+.card .wrapper{
+    height: 100%;
+}
+
 .hvr{
     width: 100%;
     height: 0%;
