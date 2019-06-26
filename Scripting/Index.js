@@ -1,13 +1,19 @@
 function tst(){
+<<<<<<< HEAD
 alert("test");
 }
 
+=======
+ alert("test");
+}
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 function ratioadj() {
   var w = window.innerWidth;
   var h = window.innerHeight;
   var x = w/h;
   console.log(x);
   if (x < .90) {
+<<<<<<< HEAD
 
     var Cards = document.getElementsByName("trifold");
 
@@ -61,11 +67,26 @@ function ratioadj() {
   }
   else {
 
+=======
+     // document.getElementById("trifold").className = "cardlong";
+
+      var Cards = document.getElementsByName("trifold");
+
+      for (var i = 0, max = Cards.length; i < max; i++) {
+          Cards[i].className = "cardlong";
+      }
+  }
+  else if (x > 2) {
+
+  }
+  else {
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
       var Cards = document.getElementsByName("trifold");
 
       for (var i = 0, max = Cards.length; i < max; i++) {
           Cards[i].className = "card";
       }
+<<<<<<< HEAD
 
       var Container = document.getElementsByName("trihold");
 
@@ -94,5 +115,7 @@ function ratioadj() {
       if(document.getElementById("longquote")){
           document.getElementById("longquote").id = "quote";
       }
+=======
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
   }
 }
