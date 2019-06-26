@@ -1,8 +1,11 @@
 /* Main Stylesheet */
+<<<<<<< HEAD
 *{
     font-family: 'Libre Franklin', sans-serif;
 }
 
+=======
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 .icon-select{
     position: fixed;
     background-color: white;
@@ -23,10 +26,15 @@
 
 .titleblock{
     background-color: red;
+<<<<<<< HEAD
+=======
+    margin-left: 50%;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     padding-left: 4px;
     height: 70vh;
     width: auto;
     padding-top: 30vh;
+<<<<<<< HEAD
     margin-left: 50%;
 }
 
@@ -44,6 +52,8 @@
 
 #longquote h2{
     font-size: calc(2vh + 8vw);
+=======
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 .aboutcontainer{
@@ -55,15 +65,25 @@
 }
 
 .wrapper{
+<<<<<<< HEAD
     height: 75%;
     text-align: center;
     position: relative;
+=======
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+#flx{
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
+<<<<<<< HEAD
 #lh2{
     font-size: calc(5vh + 5vw);
     margin-top: -4%;
@@ -75,20 +95,34 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
     max-height: calc(2.6vh + 8vw);
     overflow: hidden;
+=======
+h1{
+    font-size: calc(10px + (100 - 10) * ((100vw - 150px) / (1600 - 150)));
+    margin: 0;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 h2{
     margin: 0;
     width: 98%;
     padding-left: 2%;
+<<<<<<< HEAD
     position: relative;
+=======
+    position: absolute;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     top: 0;
     left: 0;
     color: white;
     text-align: left;
+<<<<<<< HEAD
     font-size: calc(6vh + 3vw);
     background-color: orange;
     overflow: hidden;
+=======
+    font-size: calc(15px + (100 - 15) * ((100vw - 150px) / (1600 - 150)));
+    background-color: orange;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 h3{
@@ -96,20 +130,33 @@ h3{
     margin: 0;
     min-width: 100px;
     position: absolute;
+<<<<<<< HEAD
     top: 0;
+=======
+    top: calc(4.5vh + (13px + (100 - 13) * ((100vw - 150px) / (2000 - 150))));
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     width: 90%;
     color: white;
     background-color: red;
     max-height: 100%;
+<<<<<<< HEAD
     font-size: calc(5vh + 2vw);
+=======
+    font-size: calc(13px + (100 - 13) * ((100vw - 150px) / (2000 - 150)));
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     overflow: scroll;
 }
 
 h4{
+<<<<<<< HEAD
     font-size: calc(3vw + 0.5vh);
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: -1%;
+=======
+    font-size: calc(8px + (70 - 8) * ((100vw - 150px) / (1600 - 150)));
+    margin: 0
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 h5{
@@ -117,11 +164,16 @@ h5{
     width: 100%;
     margin: 0;
     bottom: 0;
+<<<<<<< HEAD
     font-size: calc(2vh + 3vw);
+=======
+    font-size: calc(8px + (70 - 8) * ((100vw - 150px) / (1600 - 150)));
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 h6{
     margin: 0;
+<<<<<<< HEAD
     padding-left: 12%;
     padding-right: 12%;
     position: relative;
@@ -130,17 +182,32 @@ h6{
     text-align: center;
     /*font-size: 3vw;*/
     font-size: calc(2vw + 1vh);
+=======
+    width: 80%;
+    position: absolute;
+    bottom: 4vh;
+    color: black;
+    text-align: center;
+    /*font-size: 3vw;*/
+    font-size: calc(8px + (100 - 8) * ((100vw - 150px) / (5500 - 150)));
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
     background-color: white;
 }
 .card{
     background-color: black;/**/
     width: 25%;
+<<<<<<< HEAD
     height: 80%;
     position: relative;
+=======
+    height: 60%;
+    position: absolute;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 .cardlong{
     width: 90%;
+<<<<<<< HEAD
     height: 20vh;
     background-color: white;
     margin-top: 3%;
@@ -148,6 +215,11 @@ h6{
     bottom: 0;
     position: relative;
     background-color: grey;
+=======
+    height: 20%;
+    background-color: white;
+    position: absolute;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 .hvr{
@@ -198,6 +270,7 @@ h6{
     align-content: center;
 }
 
+<<<<<<< HEAD
 #wdL{
     width: 40%;
     height: 80%;
@@ -220,12 +293,18 @@ h6{
 
 #wdB{
     height: 25vh;
+=======
+#wd{
+    width: 45%;
+    height: 60%;
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 }
 
 #shrt{
     height: 50%;
 }
 
+<<<<<<< HEAD
 #triR{
     margin-right:0;
     left: 3%;
@@ -239,6 +318,8 @@ h6{
     right:3%;
 }
 
+=======
+>>>>>>> 538b4cf0fc319c53145a5d004569d749ede9388f
 .sectionhead{
     width: 100%;
     height: 10vh;
