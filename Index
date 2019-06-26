@@ -9,6 +9,7 @@
   <meta name="author" content="Christopher Scully">
 
   <link rel="stylesheet" href="StyleSheets/MainStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 
 </head>
 
@@ -60,15 +61,17 @@
             <div class="wrapper" name="trihold">
                 <div class="card" id="wdL" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>Email Me</h5></div></div>
+                    <div class="caption"><h5>Email Me</h5></div>
+                </div>
                 <div class="card" id="wdR" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>My GitHub</h5></div></div>
+                    <div class="caption"><h5>My GitHub</h5></div>
+                </div>
             </div>
             <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
             </div>
         </div>
-    </div>
+     </div>
   <script src="Scripting/Index.js"></script>
 </body>
 </html>
