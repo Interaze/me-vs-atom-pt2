@@ -13,10 +13,10 @@
 
 </head>
 
-<body onresize="ratioadj()" onload="ratioadj()">
+<body onload="ratioadj()" onscroll="triggers()" onresize="ratioadj()">
     <a class="slide" id="panel1"></a>
     <div class="icon-select" onclick="tst()"></div>
-    <div class="panel" name="Title" style="background-color: white">
+    <div class="panel" name="Title">
         <div class="titleblock" id="btitle">
             <h1>Chris<wbr>topher
             <h1 style="overflow: auto">Scully</h1>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <a class="slide" id="panel2"></a>
-    <div class="panel" name="About" style="background-color: black">
+    <div class="panel" name="About">
         <div class="aboutcontainer">
             <div class="about">
             <h2>About</h2>
@@ -35,7 +35,7 @@
         </div>
     </div>
     <a class="slide" id="panel3"></a>
-    <div class="panel" name="My Works" style="background-color: white">
+    <div class="panel" name="My Works">
         <div class="aboutcontainer">
             <div class="about">
                 <h2 class="tritle" name="tritle">My Works</h2>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <a class="slide" id="panel4"></a>
-    <div class="panel" name="Contact Me" style="background-color: black">
+    <div class="panel" name="Contact Me">
         <div class="aboutcontainer">
             <div class="about">
             <h2 class="tritle" name="tritle">Contact</h2>
@@ -73,5 +73,6 @@
         </div>
      </div>
   <script src="Scripting/Index.js"></script>
+  <script src="Scripting/Animations.js"></script>
 </body>
 </html>

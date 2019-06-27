@@ -4,6 +4,8 @@
 }
 
 body{
+    padding: 0;
+    margin: 0;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(300px);
     scroll-snap-type: y mandatory;
@@ -26,10 +28,24 @@ body{
     position: relative;
     display: block;
     scroll-snap-align: start;
+
+}
+
+.panel::after{
+    content: "";
+    background: url('../Images/—Pngtree—geometric white background_838934.jpg');
+    background-blend-mode: lighten;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .titleblock{
-    background-color: red;
+    /*background-color: red;*/
     padding-left: 4px;
     height: 70vh;
     width: auto;
@@ -54,7 +70,7 @@ body{
 }
 
 .aboutcontainer{
-    background-color: grey;
+    /*background-color: grey;*/
     margin: 0;
     position: relative;
     width: 100%;
@@ -78,6 +94,7 @@ body{
 
 h1{
     font-size: calc(4vh + 4vw);
+    color: #202020;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     max-height: calc(2.6vh + 8vw);
@@ -91,11 +108,12 @@ h2{
     position: relative;
     top: 0;
     left: 0;
-    color: white;
+    /*color: white;*/
     text-align: left;
     font-size: calc(6vh + 3vw);
-    background-color: orange;
+    /*background-color: orange;*/
     overflow: hidden;
+    color: #202020;
 }
 
 h3{
@@ -105,15 +123,17 @@ h3{
     position: absolute;
     top: 0;
     width: 90%;
-    color: white;
-    background-color: red;
+    /*color: white;*/
+    /*background-color: red;*/
     max-height: 100%;
     font-size: calc(5vh + 2vw);
     overflow: scroll;
+    color: #202020;
 }
 
 h4{
     font-size: calc(3vw + 0.5vh);
+    color: #202020;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: -1%;
@@ -124,6 +144,7 @@ h5{
     width: 100%;
     margin: 0;
     bottom: 0;
+    color: #202020;
     font-size: calc(2vh + 3vw);
 }
 
@@ -133,14 +154,15 @@ h6{
     padding-right: 12%;
     position: relative;
     top: -3%;
-    color: black;
+    /*color: black;*/
     text-align: center;
     /*font-size: 3vw;*/
     font-size: calc(2vw + 1vh);
+    color: #202020;
     background-color: white;
 }
 .card{
-    background-color: black;/**/
+    background-color: #202020;
     width: 25%;
     height: 80%;
     position: relative;
@@ -149,7 +171,7 @@ h6{
 .cardlong{
     width: 90%;
     height: 20vh;
-    background-color: white;
+    /*background-color: white;*/
     margin-top: 3%;
     margin-left: 5%;
     bottom: 0;
@@ -262,10 +284,25 @@ h6{
     position: absolute;
     margin-bottom: 8vh;
     margin-top: 12vh;
-    background-color: green;
+    /*background-color: green;*/
 }
 
-body{
-    padding: 0;
-    margin: 0;
+@keyframes fade-in-left {
+    from {
+        opacity: 0.3;
+        transform:translate(-30px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*animation: fade-in-left 1.4s;*/
+@keyframes fade-out-left {
+    from {
+        opacity: 1;        
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(-30px);
+    }
 }

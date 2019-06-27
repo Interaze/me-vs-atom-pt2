@@ -1,9 +1,18 @@
 //Animations.js
 
-function panelset(originalpanel, newpanel){
-    
-}
-
 function triggers(){
+    var offset;
+    console.log("1");
+    switch (expression) {
+        case expression:
 
+            break;
+        case expression:
+
+            break;
+
+
+        default:
+
+    }
 }
