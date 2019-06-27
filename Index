@@ -14,7 +14,7 @@
 </head>
 
 <body onresize="ratioadj()" onload="ratioadj()">
-    <a id="Home"></a>
+    <a class="slide" id="panel1"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title" style="background-color: white">
         <div class="titleblock" id="btitle">
@@ -23,7 +23,7 @@
             <h4>Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
         </div>
     </div>
-    <a id="About"></a>
+    <a class="slide" id="panel2"></a>
     <div class="panel" name="About" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <a id="MyWorks"></a>
+    <a class="slide" id="panel3"></a>
     <div class="panel" name="My Works" style="background-color: white">
         <div class="aboutcontainer">
             <div class="about">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <a id="Contact"></a>
+    <a class="slide" id="panel4"></a>
     <div class="panel" name="Contact Me" style="background-color: black">
         <div class="aboutcontainer">
             <div class="about">
