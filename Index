@@ -34,7 +34,7 @@
     </div>
     <div class="panel" name="My Works">
         <div class="aboutcontainer">
-            <div class="about">
+            <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" id="slidehold" name="trihold">
                 <div class="card" name="trifold">

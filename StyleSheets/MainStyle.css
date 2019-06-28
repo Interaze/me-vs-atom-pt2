@@ -11,13 +11,8 @@ body{
     scroll-snap-type: y mandatory;
 }
 
-#slidehold{
-    top: 16%;
-}
-
 .tritle{
-    position: absolute;
-    top: calc(6vh + 3vw);
+    position: relative;
 }
 
 .icon-select{
@@ -78,6 +73,11 @@ body{
     font-size: calc(2vh + 8vw);
 }
 
+#slideshow{
+    height: 90vh;
+    padding-top: 10vh;
+}
+
 .aboutcontainer{
     /*background-color: grey;*/
     margin: 0;
@@ -97,7 +97,7 @@ body{
 }
 
 #dualpanel{
-    
+    top: 16%;
 }
 
 #lh2{
@@ -214,7 +214,7 @@ h6{
 */
 .card:hover {
     height: 100.5%;
-    width: 180%;
+    width: 170%;
     -webkit-transition: all 0.8s, -webkit-transform 0.8s;
     transition: all 0.8s, transform 0.8s;
 }
@@ -288,7 +288,8 @@ h6{
 
 .about{
     width: 100%;
-    height: 100%;
+    height: 90%;
+    padding-top: 10%;
     position: relative;
     /*background-color: green;*/
 }
