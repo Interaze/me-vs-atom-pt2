@@ -11,6 +11,15 @@ body{
     scroll-snap-type: y mandatory;
 }
 
+#slidehold{
+    top: 16%;
+}
+
+.tritle{
+    position: absolute;
+    top: calc(6vh + 3vw);
+}
+
 .icon-select{
     position: fixed;
     background-color: white;
@@ -87,6 +96,10 @@ body{
     justify-content: center;
 }
 
+#dualpanel{
+    
+}
+
 #lh2{
     font-size: calc(5vh + 5vw);
     margin-top: -4%;
@@ -114,6 +127,8 @@ h2{
     /*background-color: orange;*/
     overflow: hidden;
     color: #202020;
+    z-index: 3;
+
 }
 
 h3{
@@ -162,9 +177,9 @@ h6{
     background-color: white;
 }
 .card{
-    background-color: #202020;
-    width: 25%;
-    height: 80%;
+    background-color: #c31f1f;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -191,8 +206,15 @@ h6{
     background-color: pink;
 }
 
-.card:hover .hvr {
+/*.card:hover .hvr {
     height: 100%;
+    -webkit-transition: all 0.8s, -webkit-transform 0.8s;
+    transition: all 0.8s, transform 0.8s;
+}
+*/
+.card:hover {
+    height: 100.5%;
+    width: 180%;
     -webkit-transition: all 0.8s, -webkit-transform 0.8s;
     transition: all 0.8s, transform 0.8s;
 }
@@ -259,31 +281,15 @@ h6{
     height: 50%;
 }
 
-#triR{
-    margin-right:0;
-    left: 3%;
-}
-
-#triM{
-    width: 35%;
-}
-
-#triL{
-    right:3%;
-}
-
 .sectionhead{
     width: 100%;
     height: 10vh;
-
 }
 
 .about{
     width: 100%;
-    height: 80vh;
-    position: absolute;
-    margin-bottom: 8vh;
-    margin-top: 12vh;
+    height: 100%;
+    position: relative;
     /*background-color: green;*/
 }
 
@@ -299,7 +305,7 @@ h6{
 /*animation: fade-in-left 1.4s;*/
 @keyframes fade-out-left {
     from {
-        opacity: 1;        
+        opacity: 1;
     }
     to {
         opacity: 0.3;
