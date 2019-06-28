@@ -1,3 +1,5 @@
+//index.js
+
 function tst(){
 alert("test");
 }

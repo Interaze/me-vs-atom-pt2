@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
 
@@ -13,7 +13,7 @@
 
 </head>
 
-<body onload="ratioadj()" onscroll="triggers()" onresize="ratioadj()">
+<body onload="ratioadj();triggers();" onscroll="triggers()" onresize="ratioadj()">
     <a class="slide" id="panel1"></a>
     <div class="icon-select" onclick="tst()"></div>
     <div class="panel" name="Title">
