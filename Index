@@ -37,14 +37,14 @@
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" id="slidehold" name="trihold">
-                <div class="card" name="trifold">
-                    <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
+                <div class="card" name="trifold" id="activetri" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
+                    <div class="hvr"></div>
                 </div>
-                <div class="card" name="trifold">
-                    <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
+                <div class="card" name="trifold" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
+                    <div class="hvr"></div>
                 </div>
-                <div class="card" name="trifold">
-                    <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
+                <div class="card" name="trifold" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
+                    <div class="hvr"></div>
                 </div>
                 </div>
             </div>
@@ -65,6 +65,10 @@
                 </div>
             </div>
             <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
+            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+        Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>-->
             </div>
         </div>
      </div>
