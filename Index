@@ -37,16 +37,26 @@
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" id="slidehold" name="trihold">
-                <div class="card" name="trifold" id="activetri" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
-                    <div class="hvr"></div>
+                <div class="card" name="trifold" id="activetri">
+                    <img src="../Images/Mizzou-columns-JayBuffington.jpg">
+                    <div class="caption"><h5>Academic Involvement</h5></div>
+                    <div class="hvr" style="background-image: url('../Images/182316-education/svg/library.svg');">
+                    </div>
                 </div>
-                <div class="card" name="trifold" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
-                    <div class="hvr"></div>
+                <div class="card" name="trifold">
+                    <img src="../Images/resume-stock.png">
+                    <div class="caption"><h5>My Resume</h5></div>
+                    <div class="hvr" style="background-image: url('../Images/182316-education/svg/exam.svg');">
+                    </div>
                 </div>
-                <div class="card" name="trifold" style="background-image: url('../Images/182316-education/svg/exam-1.svg');">
-                    <div class="hvr"></div>
+                <div class="card" name="trifold">
+                    <img src="../Images/my works.jpg">
+                    <div class="caption"><h5>Projects</h5></div>
+                    <div class="hvr" style="background-image: url('../Images/182316-education/svg/books-1.svg');">
+                    </div>
                 </div>
                 </div>
+                <div class="progress"></div>
             </div>
         </div>
     </div>
