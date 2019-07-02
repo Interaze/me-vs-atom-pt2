@@ -99,11 +99,12 @@ function ratioadj() {
   }
 }
 var interval;
+var activeslide = 1;
+var slide = document.getElementsByName("trifold");
 function slides(x){
+    slide[activeslide - 1].id = "activetri";
     var elem;
-    var activeslide = 1;
     if(x === 1){
-    document.getElementsByName("trifold")[0].id = "activetri";
     elem = document.getElementById("bar");
     var percent = 1;
     interval = setInterval(function timer() {
@@ -111,12 +112,12 @@ function slides(x){
             if(activeslide == 3){
                 document.getElementById("activetri").id = "";
                 activeslide = 1;
-                document.getElementsByName("trifold")[activeslide - 1].id = "activetri";
+                slide[activeslide - 1].id = "activetri";
             }
             else {
                 document.getElementById("activetri").id = "";
                 activeslide++;
-                document.getElementsByName("trifold")[activeslide - 1].id = "activetri";
+                slide[activeslide - 1].id = "activetri";
 
             }
             percent = 1;
@@ -125,7 +126,7 @@ function slides(x){
             percent++;
             elem.style.width = percent + '%';
         }
-    }, 65);
+    }, 60);
     }
     if (x === 0) {
         console.log("test");
@@ -135,8 +136,10 @@ function slides(x){
     }
 }
 
-
-
-function slide(){
-    var currentslide = 1;
+function changeslide(y){
+    if (document.getElementById("activetri")) {
+        document.getElementById("activetri").id = "";
+    }
+    activeslide = y;
+    slide[activeslide - 1].id = "activetri";
 }
