@@ -36,7 +36,7 @@
         <div class="aboutcontainer">
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
-                <div class="wrapper" id="slidehold" name="trihold">
+                <div class="wrapper" id="slidehold" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
                 <div class="card" name="trifold" id="activetri">
                     <img src="../Images/Mizzou-columns-JayBuffington.jpg">
                     <div class="caption"><h5>Academic Involvement</h5></div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="progress"></div>
+                <div class="progress"><div id="bar"></div></div>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
                     <div class="caption"><h5>My GitHub</h5></div>
                 </div>
             </div>
-            <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
+            <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be grateful. Although I'm just text, not a cop.</h6>
             <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 

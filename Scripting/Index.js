@@ -98,3 +98,45 @@ function ratioadj() {
       }
   }
 }
+var interval;
+function slides(x){
+    var elem;
+    var activeslide = 1;
+    if(x === 1){
+    document.getElementsByName("trifold")[0].id = "activetri";
+    elem = document.getElementById("bar");
+    var percent = 1;
+    interval = setInterval(function timer() {
+        if(percent >= 100){
+            if(activeslide == 3){
+                document.getElementById("activetri").id = "";
+                activeslide = 1;
+                document.getElementsByName("trifold")[activeslide - 1].id = "activetri";
+            }
+            else {
+                document.getElementById("activetri").id = "";
+                activeslide++;
+                document.getElementsByName("trifold")[activeslide - 1].id = "activetri";
+
+            }
+            percent = 1;
+        }
+        else {
+            percent++;
+            elem.style.width = percent + '%';
+        }
+    }, 65);
+    }
+    if (x === 0) {
+        console.log("test");
+        clearInterval(interval);
+        percent = 1;
+        document.getElementById('activetri').id = "";
+    }
+}
+
+
+
+function slide(){
+    var currentslide = 1;
+}
