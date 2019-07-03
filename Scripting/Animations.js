@@ -71,10 +71,12 @@ function SlideThree(toggle){
     if(CurrentSlides[2] != toggle){
         if(toggle == 1){
             console.log('Open Slide Three');
+            slides(1);
             CurrentSlides[2] = 1;
         }
         else {
             console.log('Close Slide Three');
+            slides(0);
             CurrentSlides[2] = 0;
         }
     }
@@ -91,4 +93,55 @@ function SlideFour(toggle){
             CurrentSlides[3] = 0;
         }
     }
+}
+
+var interval;
+var activeslide = 1;
+var slide = document.getElementsByName("trifold");
+var isRunning = 0;
+
+function slides(x){
+    slide[activeslide - 1].id = "activetri";
+    var elem;
+    if(x === 1 && isRunning === 0){
+    isRunning = 1;
+    elem = document.getElementById("bar");
+    var percent = 1;
+    interval = setInterval(function timer() {
+        if(percent >= 100){
+            if(activeslide == 3){
+                document.getElementById("activetri").id = "";
+                activeslide = 1;
+                slide[activeslide - 1].id = "activetri";
+            }
+            else {
+                document.getElementById("activetri").id = "";
+                activeslide++;
+                slide[activeslide - 1].id = "activetri";
+
+            }
+            percent = 1;
+        }
+
+        else {
+            percent++;
+            elem.style.width = percent + '%';
+        }
+    }, 60);
+    }
+
+    if (x === 0) {
+        clearInterval(interval);
+        isRunning = 0;
+        percent = 1;
+        document.getElementById('activetri').id = "";
+    }
+}
+
+function changeslide(y){
+    if (document.getElementById("activetri")) {
+        document.getElementById("activetri").id = "";
+    }
+    activeslide = y;
+    slide[activeslide - 1].id = "activetri";
 }

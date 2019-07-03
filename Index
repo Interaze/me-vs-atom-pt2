@@ -64,7 +64,7 @@
         <div class="aboutcontainer">
             <div class="about">
             <h2 class="tritle" name="tritle">Contact</h2>
-            <div class="wrapper" id="dualpanel" name="trihold">
+            <div class="wrapper" name="trihold">
                 <div class="card" id="wdL" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
                     <div class="caption"><h5>Email Me</h5></div>
