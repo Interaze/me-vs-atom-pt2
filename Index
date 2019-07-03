@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="progress"><div id="bar"></div></div>
+                <div class="progress" id="slideprogress"><div id="bar"></div></div>
             </div>
         </div>
     </div>

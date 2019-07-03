@@ -23,6 +23,8 @@ function ratioadj() {
         Container[i].style.display = "block";
     }
 
+    document.getElementById("slideprogress").style.visibility = 'hidden';
+
     if (document.getElementById("triL")) {
         document.getElementById("triL").id = "LtriT";
     }
@@ -74,6 +76,8 @@ function ratioadj() {
       for (var i = 0, max = Container.length; i < max; i++) {
           Container[i].style.display = "flex";
       }
+
+      document.getElementById("slideprogress").style.visibility = 'visible';
 
       if(document.getElementById("btitle")){
           document.getElementById("btitle").id = "reg";
