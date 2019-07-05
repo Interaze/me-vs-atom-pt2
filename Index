@@ -10,14 +10,14 @@
 
   <link rel="stylesheet" href="StyleSheets/MainStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
-
 </head>
 
-<body onload="ratioadj();triggers();" onscroll="triggers()" onresize="ratioadj()">
+<body onscroll="triggers()" onresize="ratioadj()">
+    <!-- loading design was inspired by Petr Tichy from his blog post on https://ihatetomatoes.net/create-css3-spinning-preloader/ -->
     <div id="load-wrapper">
     <div id="loader"></div>
-    <div id="load-left"></div>
-    <div id="load-right"></div>
+    <div class="loadpanel" id="load-left" style="top: 0; left: 0;"></div>
+    <div class="loadpanel" id="load-right" style="bottom: 0;right: 0;"></div>
     </div>
     <div class="panel" name="Title">
         <div class="titleblock" id="btitle">
@@ -89,5 +89,6 @@
      <div class="footer"></div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
+  <script type='text/javascript'>ratioadj();closeLoad();triggers();</script>
 </body>
 </html>
