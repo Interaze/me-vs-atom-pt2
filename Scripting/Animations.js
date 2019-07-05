@@ -41,55 +41,88 @@ function triggers(){
     }
 }
 
+var slide = document.getElementsByClassName("panel");
+var S1Title1 = slide[0].getElementsByTagName("H1")[0];
+var S1Title2 = slide[0].getElementsByTagName("H1")[1];
+var S1SubTitle = slide[0].getElementsByTagName("H4")[0];
+
 function SlideOne(toggle){
     if(CurrentSlides[0] != toggle){
         if(toggle == 1){
             console.log('Open Slide One');
+            S1Title1.id = "title-fade-in";
+            setTimeout(function(){
+                S1Title2.id = "title-fade-in";
+            }, 200);
+            setTimeout(function(){
+                S1SubTitle.id = "title-fade-in";
+            }, 400);
             CurrentSlides[0] = 1;
         }
         else {
             console.log('Close Slide One');
+            S1Title1.id = "title-fade-out";
+            S1Title2.id = "title-fade-out";
+            S1SubTitle.id = "title-fade-out";
             CurrentSlides[0] = 0;
         }
     }
 }
+var S2Header = slide[1].getElementsByTagName("H2")[0];
+var S2Quote = slide[1].getElementsByTagName("H3")[0];
 
 function SlideTwo(toggle){
     if(CurrentSlides[1] != toggle){
         if(toggle == 1){
             console.log('Open Slide Two');
+            S2Header.id = "header-fade-in";
+            setTimeout(function(){
+                S2Quote.id = "quote-fade-in";
+            }, 400);
             CurrentSlides[1] = 1;
         }
         else {
             console.log('Close Slide Two');
+            S2Header.id = "header-fade-out";
+            S2Quote.id = "header-fade-out";
             CurrentSlides[1] = 0;
         }
     }
 }
+var S3Header = slide[2].getElementsByTagName("H2")[0];
+var S3Slideshow = slide[2].getElementsByClassName("wrapper")[0];
 
 function SlideThree(toggle){
     if(CurrentSlides[2] != toggle){
         if(toggle == 1){
             console.log('Open Slide Three');
-            slides(1);
+            //test:  S3Header.style.visibility = 'hidden';
+            S3Header.id = "header-fade-in";
+            S3Slideshow.id = "slide-fade-in";
+            setTimeout(slides(1), 250);
             CurrentSlides[2] = 1;
         }
         else {
             console.log('Close Slide Three');
+            S3Header.id = "header-fade-out";
+            S3Slideshow.id = "slide-fade-out";
             slides(0);
             CurrentSlides[2] = 0;
         }
     }
 }
+var S4Header = slide[3].getElementsByTagName("H2")[0];
 
 function SlideFour(toggle){
     if(CurrentSlides[3] != toggle){
         if(toggle == 1){
             console.log('Open Slide Four');
+            S4Header.id = "header-fade-in";
             CurrentSlides[3] = 1;
         }
         else {
             console.log('Close Slide Four');
+            S4Header.id = "header-fade-out";
             CurrentSlides[3] = 0;
         }
     }
@@ -99,13 +132,14 @@ var interval;
 var activeslide = 1;
 var slide = document.getElementsByName("trifold");
 var isRunning = 0;
+var elem;
+elem = document.getElementById("bar");
 
 function slides(x){
     slide[activeslide - 1].id = "activetri";
-    var elem;
     if(x === 1 && isRunning === 0){
     isRunning = 1;
-    elem = document.getElementById("bar");
+
     var percent = 1;
     interval = setInterval(function timer() {
         if(percent >= 100){
@@ -134,6 +168,7 @@ function slides(x){
         clearInterval(interval);
         isRunning = 0;
         percent = 1;
+        elem.style.width = percent + '%';
         document.getElementById('activetri').id = "";
     }
 }

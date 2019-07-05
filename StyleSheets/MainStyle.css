@@ -7,7 +7,7 @@ body{
     padding: 0;
     margin: 0;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(300px);
+    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
 
@@ -137,7 +137,7 @@ h2{
     overflow: hidden;
     color: #24292e;
     z-index: 3;
-    animation: fade-in-left 1.4s;
+    /*animation: fade-in-left 1.4s;*/
 }
 
 h3{
@@ -376,10 +376,43 @@ h6{
     background-color: grey;
 }
 
+#title-fade-in{
+    animation: fade-in-right 2s;
+}
+
+#title-fade-out{
+    opacity: 0.3;
+    transform:translate(20px);
+}
+
+#header-fade-in{
+    animation: fade-in-left 2s;
+}
+
+#header-fade-out{
+    opacity: 0.3;
+    transform: translate(-10px);
+}
+
+#quote-fade-in{
+    animation: fade-in-left 2s;
+    
+}
+
+#slide-fade-in{
+    animation: fade-in-up .5s;
+}
+
+#slide-fade-out{
+    animation: fade-out-down .5s;
+    opacity: 0.3;
+    transform:translate(0, -10px);
+}
+
 @keyframes fade-in-left {
     from {
         opacity: 0.3;
-        transform:translate(-30px);
+        transform:translate(-10px);
     }
     to {
         opacity: 1;
@@ -392,6 +425,46 @@ h6{
     }
     to {
         opacity: 0.3;
-        transform:translate(-30px);
+        transform:translate(-10px);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0.3;
+        transform:translate(20px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*animation: fade-in-left 1.4s;*/
+@keyframes fade-out-right {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(20px);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0.3;
+        transform:translate(0, -10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-down {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(0, -10px);
     }
 }

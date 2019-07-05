@@ -14,20 +14,24 @@
 </head>
 
 <body onload="ratioadj();triggers();" onscroll="triggers()" onresize="ratioadj()">
-    <div class="icon-select" onclick="tst()"></div>
+    <div id="load-wrapper">
+    <div id="loader"></div>
+    <div id="load-left"></div>
+    <div id="load-right"></div>
+    </div>
     <div class="panel" name="Title">
         <div class="titleblock" id="btitle">
-            <h1>Chris<wbr>topher
-            <h1 style="overflow: auto">Scully</h1>
-            <h4>Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
+            <h1 id="title-fade-out">Chris<wbr>topher
+            <h1 style="overflow: auto" id="title-fade-out">Scully</h1>
+            <h4 id="title-fade-out">Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
         </div>
     </div>
     <div class="panel" name="About">
         <div class="aboutcontainer">
             <div class="about">
-            <h2>About</h2>
+            <h2 id="header-fade-out">About</h2>
             <div class="wrapper" id="quote">
-                <h3>"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
+                <h3 id="header-fade-out">"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
             </div>
             </div>
         </div>
@@ -36,7 +40,7 @@
         <div class="aboutcontainer">
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
-                <div class="wrapper" id="slidehold" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
+                <div class="wrapper" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
                 <div class="card" name="trifold" onmouseover="changeslide(1);">
                     <img src="../Images/Mizzou-columns-JayBuffington.jpg">
                     <div class="caption"><h5>Academic Involvement</h5></div>
@@ -82,6 +86,7 @@
             </div>
         </div>
      </div>
+     <div class="footer"></div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
 </body>
