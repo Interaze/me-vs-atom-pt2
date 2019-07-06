@@ -23,6 +23,22 @@ img {
     opacity: .90;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    position: fixed;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  /*background: #f1f1f1;*/
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+}
+
 #loader{
     position: relative;
     margin: 0;
@@ -114,6 +130,7 @@ img {
     display: block;
     overflow: hidden;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 
 }
 
@@ -121,7 +138,8 @@ img {
     content: "";
     background: url('../Images/—Pngtree—geometric white background_838934.jpg');
     background-blend-mode: lighten;
-    opacity: 0.4;
+    background-size: cover;
+    opacity: 0.35;
     top: 0;
     left: 0;
     bottom: 0;
@@ -213,7 +231,7 @@ h3{
     width: 90%;
     max-height: 100%;
     font-size: calc(5vh + 2vw);
-    overflow: scroll;
+    overflow: hidden;
     color: #24292e;
 }
 
@@ -367,20 +385,12 @@ h6{
     align-content: center;
 }
 
-#wdL{
-    width: 40%;
-    height: 80%;
-    margin: 0;
-    float: left;
-    right: 2%;
+#wdL .caption{
+    writing-mode: tb-rl;
 }
 
-#wdR{
-    width: 40%;
-    height: 80%;
-    margin-right: 0;
-    float: right;
-    left: 2%;
+#wdR .caption{
+    writing-mode: tb-rl;
 }
 
 #wdT{

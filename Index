@@ -66,30 +66,19 @@
     </div>
     <div class="panel" name="Contact Me">
         <div class="aboutcontainer">
-            <div class="about">
-            <h2 class="tritle" name="tritle">Contact</h2>
-            <div class="wrapper" name="trihold">
-                <div class="card" id="wdL" name="trifold">
-                    <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>Email Me</h5></div>
-                </div>
-                <div class="card" id="wdR" name="trifold">
-                    <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-                    <div class="caption"><h5>My GitHub</h5></div>
-                </div>
-            </div>
-            <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be grateful. Although I'm just text, not a cop.</h6>
+
+            <h2 class="tritle" name="tritle">Additional</h2>
+
             <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 
         Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
     <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-            </div>
-        </div>
+
      </div>
      <div class="footer"></div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
-  <script type='text/javascript'>ratioadj();closeLoad();triggers();window.scrollTop=0;</script>
+  <script type='text/javascript'>ratioadj();closeLoad();triggers();</script>
 </body>
 </html>

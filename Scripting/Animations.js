@@ -101,7 +101,7 @@ function SlideThree(toggle){
             console.log('Open Slide Three');
             S3Header.id = "header-fade-in";
             S3Slideshow.id = "slide-fade-in";
-            setTimeout(slides(1), 1000);
+            setTimeout(slides(1), 1500);
             CurrentSlides[2] = 1;
         }
         else {
