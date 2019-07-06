@@ -93,6 +93,9 @@ var S3Header = slide[2].getElementsByTagName("H2")[0];
 var S3Slideshow = slide[2].getElementsByClassName("wrapper")[0];
 
 function SlideThree(toggle){
+    if(toggle == 0){
+        slides(0);//avoids glitch of slides runnig while out of view
+    }
     if(CurrentSlides[2] != toggle){
         if(toggle == 1){
             console.log('Open Slide Three');
@@ -105,7 +108,6 @@ function SlideThree(toggle){
             console.log('Close Slide Three');
             S3Header.id = "header-fade-out";
             S3Slideshow.id = "slide-fade-out";
-            slides(0);
             CurrentSlides[2] = 0;
         }
     }
@@ -151,7 +153,6 @@ function slides(x){
                 document.getElementById("activetri").id = "";
                 activeslide++;
                 slide[activeslide - 1].id = "activetri";
-
             }
             percent = 1;
         }
@@ -163,7 +164,7 @@ function slides(x){
     }, 60);
     }
 
-    if (x === 0) {
+    if (x == 0) {
         clearInterval(interval);
         isRunning = 0;
         percent = 1;
@@ -181,12 +182,13 @@ function changeslide(y){
 }
 
 function closeLoad(){
-    //document.getElementById("loadicon").id = "hideicon";
     document.getElementById("load-left").id = "closepanel";
     document.getElementById("load-right").id = "closepanel";
     document.getElementById("loader").style = "animation: hideload .8s; opacity: 0; visibility: hidden;";
     setTimeout(function(){
         document.getElementById("load-wrapper").style = "visibility: hidden;";
+        document.getElementsByTagName("body")[0].className = "";
     }, 1000);
-    console.log("test");
+;
+    //console.log("test");
 }

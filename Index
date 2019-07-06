@@ -19,7 +19,7 @@
     <div class="loadpanel" id="load-left" style="top: 0; left: 0;"></div>
     <div class="loadpanel" id="load-right" style="bottom: 0;right: 0;"></div>
     </div>
-    <div class="panel" name="Title">
+    <div class="panel" id="topp" name="Title">
         <div class="titleblock" id="btitle">
             <h1 id="title-fade-out">Chris<wbr>topher
             <h1 style="overflow: auto" id="title-fade-out">Scully</h1>
@@ -56,7 +56,7 @@
                 <div class="card" name="trifold" onmouseover="changeslide(3);">
                     <img src="../Images/my works.jpg">
                     <div class="caption"><h5>Projects</h5></div>
-                    <div class="hvr" style="background-image: url('../Images/182316-education/svg/books-1.svg');">
+                    <div class="hvr" style="background-image: url('../Images/182316-education/svg/code.svg');">
                     </div>
                 </div>
                 </div>
@@ -82,13 +82,14 @@
             <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 
-        Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>-->
+        Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
+    <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
             </div>
         </div>
      </div>
      <div class="footer"></div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
-  <script type='text/javascript'>ratioadj();closeLoad();triggers();</script>
+  <script type='text/javascript'>ratioadj();closeLoad();triggers();window.scrollTop=0;</script>
 </body>
 </html>
