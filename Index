@@ -63,21 +63,45 @@
             </div>
         </div>
     </div>
-    <div class="panel" name="Contact Me">
-        <div class="aboutcontainer">
+    <div class="panel" name="This Site">
+        <div class="aboutcontainer" style="padding-top: calc(7vh - 3vw)">
 
-            <h2 class="tritle" name="tritle">Additional</h2>
-
-            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-
-        Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
-    <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-
-     </div>
-     <div class="footer"></div>
+            <h2 class="tritle" name="tritle">This Site</h2>
+        <ul>
+        <label for="L1"><li><h4 class="captionTitle">Site's Purpose</h4>
+        </li></label>
+        <input type="radio" class="list" name="list" id="L1" value="L1" checked>
+        <p>While I've worked with HTML and CSS since 8th grade, and pickup up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
+        <li>
+            <label for="L2"><h4 class="captionTitle">Crediting</h4></label>
+        </li>
+        <input type="radio" class="list" name="list" id="L2" value="L2">
+        <p>Besides the images and Icons that are acredited within the footer of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes and :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
+        <li>
+            <label for="L3"><h4 class="captionTitle">Site Build</h4></label>
+        </li>
+        <input type="radio" class="list" name="list" id="L3" value="L3">
+        <p>I built this site with standard front-end utilities (HTML, CSS, JS)</p>
+        <li>
+            <label for="L4"><h4 class="captionTitle">Why?</h4></label>
+        </li>
+        <input type="radio" class="list" name="list" id="L4" value="L4">
+        <p>While utilities similar to Bootstrap and JQuery can help in developing powerful websites, I place a high priority on the development and understanding of the underlying utilities offered. While I'm not adverse to using tools like JQuery, I wanted to take advantage to further expand my understanding of what powers it. Furthermore, there are other projects where I've utalized these tools to exhibit of comprehension of them, yet I aspire to avoid a dependancy on these tools.</p>
+        </ul>
+        </div>
+    </div>
+    <div class="panel" name="footer">
+            <div class="footer">
+                <h2 class="tritle" name="tritle" style="color: #f4f4f4;">Additional</h2>
+            </div>
+    </div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
   <script type='text/javascript'>ratioadj();closeLoad();triggers();</script>
 </body>
 </html>
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+Background Photos from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
+<div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->

@@ -1,5 +1,5 @@
 //Animations.js
-var CurrentSlides = [0,0,0,0];
+var CurrentSlides = [0,0,0,0,0];
 
 function triggers(){
     var ml = document.getElementById("tml");
@@ -12,21 +12,32 @@ function triggers(){
             SlideTwo(0);
             SlideThree(0);
             SlideFour(0);
+            SlideFive(0);
             break;
         case 1:
             SlideTwo(1);
             SlideOne(0);
             SlideThree(0);
             SlideFour(0);
+            SlideFive(0);
             break;
         case 2:
             SlideThree(1);
             SlideOne(0);
             SlideTwo(0);
             SlideFour(0);
+            SlideFive(0);
             break;
         case 3:
             SlideFour(1);
+            SlideFive(0);
+            SlideOne(0);
+            SlideTwo(0);
+            SlideThree(0);
+            break;
+        case 4:
+            SlideFive(1);
+            SlideFour(0);
             SlideOne(0);
             SlideTwo(0);
             SlideThree(0);
@@ -125,6 +136,23 @@ function SlideFour(toggle){
             console.log('Close Slide Four');
             S4Header.id = "header-fade-out";
             CurrentSlides[3] = 0;
+        }
+    }
+}
+
+var S5Header = slide[4].getElementsByTagName("H2")[0];
+
+function SlideFive(toggle){
+    if(CurrentSlides[4] != toggle){
+        if(toggle == 1){
+            console.log('Open Slide Five');
+            S5Header.id = "header-fade-in";
+            CurrentSlides[4] = 1;
+        }
+        else {
+            console.log('Close Slide Five');
+            S5Header.id = "header-fade-out";
+            CurrentSlides[4] = 0;
         }
     }
 }

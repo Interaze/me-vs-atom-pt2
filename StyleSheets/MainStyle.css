@@ -6,6 +6,7 @@
 body{
     padding: 0;
     margin: 0;
+    min-width: 190px;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -264,6 +265,70 @@ h6{
     color: #24292e;
     background-color: white;
 }
+
+p{
+    margin: 0;
+    overflow-y: scroll;
+    font-size: calc((2vw + 1vh));
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+}
+
+ul{
+    list-style-type: none;
+    display: block;
+    width: 80vw;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+li{
+    width: 100%;
+    padding-top: 16px;
+    height: auto;
+}
+
+li h4{
+    padding: 10px;
+    border-bottom: 1px solid #9499a0;
+    font-size: calc(5vh + 2vw);
+}
+
+li:hover{
+    background-color: #cfd2d4;
+}
+
+.list:checked+p{
+    max-height: 20vh;
+    border-bottom: 1px outset #9499a0;
+    height: auto;
+}
+
+.list+p {
+    height: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+option {
+    height: auto;
+    width: auto;
+}
+
+.list{
+    visibility: hidden;
+    display: none;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    margin: 0;
+}
+
 .card{
     background-color: #F8F8F8;
     width: 100%;
@@ -383,6 +448,14 @@ h6{
     display: flex;
     align-items: center;
     align-content: center;
+}
+
+.footer{
+    background-color:rgb(37, 41, 43);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
 }
 
 #wdL .caption{
