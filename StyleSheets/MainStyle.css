@@ -291,11 +291,24 @@ li{
     width: 100%;
     padding-top: 16px;
     height: auto;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    z-index: 3;
+}
+
+.longlist{
+    width: 30%;
+}
+
+.longparagraph{
+    width: 70%;
+    height: 100%;
+    float: right;
 }
 
 li h4{
     padding: 10px;
-    border-bottom: 1px solid #9499a0;
     font-size: calc(5vh + 2vw);
 }
 
@@ -304,9 +317,8 @@ li:hover{
 }
 
 .list:checked+p{
-    max-height: 20vh;
-    border-bottom: 1px outset #9499a0;
-    height: auto;
+    max-height: 100%;
+    height: 100%;
 }
 
 .list+p {
