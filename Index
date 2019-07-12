@@ -63,25 +63,17 @@
             </div>
         </div>
     </div>
-    <div class="panel" name="This Site">
-        <div class="aboutcontainer" style="padding-top: calc(7vh - 3vw)">
+    <div class="panel" style="display: flex;"name="This Site">
 
-            <h2 class="tritle" name="tritle">This Site</h2>
-        <ul>
-        <span style="float:left; width: 30%;">
-        <label for="L1"><li><h4 class="captionTitle">Site's Purpose</h4>
-        </li></label>
-        <li>
-            <label for="L2"><h4 class="captionTitle">Crediting</h4></label>
-        </li>
-        <li>
-            <label for="L3"><h4 class="captionTitle">Site Build</h4></label>
-        </li>
-        <li>
-            <label for="L4"><h4 class="captionTitle">Why?</h4></label>
-        </li>
-        </span>
-        <span style="float: right; width: 70%;">
+            <h2 class="tritle" name="tritle" style="position: absolute;top: calc(2vw + 3vh);left: 1%;">This Site</h2>
+
+            <div class="bearText">
+            <label class="movoptions" for="L1"><h4 class="captionTitle">Site's Purpose</h4></label>
+            <label class="movoptions" for="L2"><h4 class="captionTitle">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
+            <label class="movoptions" for="L3"><h4 class="captionTitle">Site Build</h4></label>
+            <label class="movoptions" for="L4"><h4 class="captionTitle">Why Vanilla?</h4></label>
+            </div>
+        <!--<span style="float: right; width: 70%;">
         <input type="radio" class="list" name="list" id="L1" value="L1" checked>
         <p>While I've worked with HTML and CSS since 8th grade, and pickup up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
         <input type="radio" class="list" name="list" id="L2" value="L2">
@@ -90,11 +82,9 @@
         <p>I built this site with standard front-end utilities (HTML, CSS, JS)</p>
         <input type="radio" class="list" name="list" id="L4" value="L4">
         <p>While utilities similar to Bootstrap and JQuery can help in developing powerful websites, I place a high priority on the development and understanding of the underlying utilities offered. While I'm not adverse to using tools like JQuery, I wanted to take advantage to further expand my understanding of what powers it. Furthermore, there are other projects where I've utalized these tools to exhibit of comprehension of them, yet I aspire to avoid a dependancy on these tools.</p>
-        </span>
-        </ul>
-        </div>
+    </span>-->
     </div>
-    <div class="panel" name="footer">
+    <div class="panel" id="quad" name="footer">
             <div class="footer">
                 <h2 class="tritle" name="tritle" style="color: #f4f4f4;">Additional</h2>
             </div>

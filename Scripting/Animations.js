@@ -2,11 +2,10 @@
 var CurrentSlides = [0,0,0,0,0];
 
 function triggers(){
-    var ml = document.getElementById("tml");
-    //console.log(ml.scrollTop / window.innerHeight);
-    var pageheight = ml.scrollTop / window.innerHeight;
 
-    switch (pageheight = Math.round(pageheight)) {
+var prgrss = scrollprogTrig();
+
+    switch (pageheight = Math.round(prgrss)) {
         case 0:
             SlideOne(1);
             SlideTwo(0);
@@ -30,6 +29,7 @@ function triggers(){
             break;
         case 3:
             SlideFour(1);
+            scrollprogTrig();
             SlideFive(0);
             SlideOne(0);
             SlideTwo(0);
@@ -37,6 +37,7 @@ function triggers(){
             break;
         case 4:
             SlideFive(1);
+            scrollprogTrig();
             SlideFour(0);
             SlideOne(0);
             SlideTwo(0);
@@ -219,4 +220,11 @@ function closeLoad(){
     }, 1000);
 ;
     //console.log("test");
+}
+
+function scrollprogTrig(){
+    var marker = document.getElementById("tml");
+    //console.log(ml.scrollTop / window.innerHeight);
+    var pageheight = Number(marker.scrollTop / window.innerHeight).toFixed(2);
+    return(pageheight);
 }
