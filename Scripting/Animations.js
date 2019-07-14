@@ -123,21 +123,18 @@ function SlideThree(toggle){
         }
     }
 }
-var S4Header = slide[3].getElementsByTagName("H2")[0];
 
 function SlideFour(toggle, prgrss){
     if(toggle == 1){
-        console.log(prgrss);
+        moveoptions(prgrss);
     }
     if(CurrentSlides[3] != toggle){
         if(toggle == 1){
             console.log('Open Slide Four');
-            S4Header.id = "header-fade-in";
             CurrentSlides[3] = 1;
         }
         else {
             console.log('Close Slide Four');
-            S4Header.id = "header-fade-out";
             CurrentSlides[3] = 0;
         }
     }
@@ -229,4 +226,26 @@ function scrollprogTrig(){
     //console.log(ml.scrollTop / window.innerHeight);
     var pageheight = Number(marker.scrollTop / window.innerHeight).toFixed(2);
     return(pageheight);
+}
+
+var option1 = document.getElementById("optionone");
+var option2 = document.getElementById("optiontwo");
+var option3 = document.getElementById("optionthree");
+var option4 = document.getElementById("optionfour");
+
+function setmoveop(){
+    moveoptions(2.5);
+}
+
+function moveoptions(heightdown){
+    var opac = -(7/5) * Math.abs(heightdown - 3) + 1;
+    optionone.style.opacity = opac;
+    optiontwo.style.opacity = opac;
+    optionthree.style.opacity = opac;
+    optionfour.style.opacity = opac;
+
+    optionone.style.marginLeft = (2 * heightdown - 8) + 'vw';
+    optiontwo.style.marginLeft = (12 * heightdown - 26) + 'vw';
+    optionthree.style.marginLeft = (16 * heightdown - 33) + 'vw';
+    optionfour.style.marginLeft = (6 * heightdown - 11) + 'vw';
 }
