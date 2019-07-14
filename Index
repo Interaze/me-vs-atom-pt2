@@ -67,11 +67,11 @@
 
             <h2 class="tritle" name="tritle" style="position: absolute;top: calc(2vw + 3vh);left: 1%;">This Site</h2>
 
-            <div class="bearText">
-            <label class="movoptions" for="L1"><h4 class="captionTitle">Site's Purpose</h4></label>
-            <label class="movoptions" for="L2"><h4 class="captionTitle">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
-            <label class="movoptions" for="L3"><h4 class="captionTitle">Site Build</h4></label>
-            <label class="movoptions" for="L4"><h4 class="captionTitle">Why Vanilla?</h4></label>
+            <div class="bearText" id="horzdis">
+            <label class="horzptions" for="L1"><h4 class="captionTitle">Site's Purpose</h4></label>
+            <label class="horzoptions" for="L2"><h4 class="captionTitle">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
+            <label class="horzoptions" for="L3"><h4 class="captionTitle">Site Build</h4></label>
+            <label class="horzoptions" for="L4"><h4 class="captionTitle">Why Vanilla?</h4></label>
             </div>
         <!--<span style="float: right; width: 70%;">
         <input type="radio" class="list" name="list" id="L1" value="L1" checked>

@@ -28,8 +28,7 @@ var prgrss = scrollprogTrig();
             SlideFive(0);
             break;
         case 3:
-            SlideFour(1);
-            scrollprogTrig();
+            SlideFour(1, prgrss);
             SlideFive(0);
             SlideOne(0);
             SlideTwo(0);
@@ -37,7 +36,6 @@ var prgrss = scrollprogTrig();
             break;
         case 4:
             SlideFive(1);
-            scrollprogTrig();
             SlideFour(0);
             SlideOne(0);
             SlideTwo(0);
@@ -50,6 +48,7 @@ var prgrss = scrollprogTrig();
             SlideTwo(1);
             SlideThree(1);
             SlideFour(1);
+            SlideFive(1);
     }
 }
 
@@ -126,7 +125,10 @@ function SlideThree(toggle){
 }
 var S4Header = slide[3].getElementsByTagName("H2")[0];
 
-function SlideFour(toggle){
+function SlideFour(toggle, prgrss){
+    if(toggle == 1){
+        console.log(prgrss);
+    }
     if(CurrentSlides[3] != toggle){
         if(toggle == 1){
             console.log('Open Slide Four');

@@ -278,18 +278,35 @@ p{
 }
 
 .bearText{
-    background-color: #f6f6f6;
-    margin: 0 auto;
-    margin-top: 40vh;
-    margin-bottom: 60vh;
+    /*background-color: #f6f6f6;*/
+    margin: auto;
     text-align: center;
+    display: flex;
+    height: fit-content;
+}
+
+#verdis {
     display: flex;
 }
 
-.movoptions h4{
+.vertoptions h4{
     /*transform: rotate(90deg);*/
     writing-mode: vertical-rl;
+}
+
+#horzdis{
+    display: block;
+    text-align: left;
+}
+
+.horzoptions h4{
+
+}
+
+.captionTitle{
     white-space: nowrap;
+    font-size: 15vmin;
+    margin-bottom: 2vh;
 }
 
 .cornerPiece{
