@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 </head>
 
-<body onscroll="triggers()" onresize="ratioadj()">
+<body onscroll="triggers()" onresize="ratioadj()" id="bdy">
     <!-- loading design was inspired by Petr Tichy from his blog post on https://ihatetomatoes.net/create-css3-spinning-preloader/ -->
     <div id="load-wrapper">
     <div id="loader"></div>
@@ -21,7 +21,7 @@
     <div class="panel" id="topp" name="Title">
         <div class="titleblock" id="btitle">
             <h1 id="title-fade-out">Chris<wbr>topher
-            <h1 style="overflow: auto" id="title-fade-out">Scully</h1>
+            <h1 style="overflow: hidden" id="title-fade-out">Scully</h1>
             <h4 id="title-fade-out">Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
         </div>
     </div>
@@ -64,23 +64,42 @@
         </div>
     </div>
     <div class="panel" style="display: flex;"name="This Site">
-        
+        <input type="radio" class="list" name="list" id="L5" value="L5">
             <div class="bearText" id="horzdis">
-            <label class="horzptions" for="L1"><h4 class="captionTitle" id="optionone">Site's Purpose</h4></label>
-            <label class="horzoptions" for="L2"><h4 class="captionTitle" id="optiontwo">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
-            <label class="horzoptions" for="L3"><h4 class="captionTitle" id="optionthree">Site Build</h4></label>
-            <label class="horzoptions" for="L4"><h4 class="captionTitle" id="optionfour">Why Vanilla?</h4></label>
+            <label class="horzptions" for="L1" onclick="scrolllock()"><h4 class="captionTitle" id="optionone">Site's Purpose</h4></label>
+            <label class="horzoptions" for="L2" onclick="scrolllock()"><h4 class="captionTitle" id="optiontwo">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
+            <label class="horzoptions" for="L3" onclick="scrolllock()"><h4 class="captionTitle" id="optionthree">Site Build</h4></label>
+            <label class="horzoptions" for="L4" onclick="scrolllock()"><h4 class="captionTitle" id="optionfour">Why Vanilla?</h4></label>
             </div>
-        <!--<span style="float: right; width: 70%;">
-        <input type="radio" class="list" name="list" id="L1" value="L1" checked>
-        <p>While I've worked with HTML and CSS since 8th grade, and pickup up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
-        <input type="radio" class="list" name="list" id="L2" value="L2">
-        <p>Besides the images and Icons that are acredited within the footer of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes and :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
-        <input type="radio" class="list" name="list" id="L3" value="L3">
-        <p>I built this site with standard front-end utilities (HTML, CSS, JS)</p>
-        <input type="radio" class="list" name="list" id="L4" value="L4">
-        <p>While utilities similar to Bootstrap and JQuery can help in developing powerful websites, I place a high priority on the development and understanding of the underlying utilities offered. While I'm not adverse to using tools like JQuery, I wanted to take advantage to further expand my understanding of what powers it. Furthermore, there are other projects where I've utalized these tools to exhibit of comprehension of them, yet I aspire to avoid a dependancy on these tools.</p>
-    </span>-->
+
+            <label class="horzptions" for="L5">
+            <input type="radio" class="list" name="list" id="L1" value="L1">
+            <div class="infopanel" onclick="scrollunlock()">
+
+                <p>While I've worked with HTML and CSS since 8th grade, and pickup up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
+            </div>
+            </label>
+            <label class="horzptions" for="L5">
+            <input type="radio" class="list" name="list" id="L2" value="L2">
+            <div class="infopanel" onclick="scrollunlock()">
+
+                <p>Besides the images and Icons that are acredited within the footer of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes along with using :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
+            </div>
+            </label>
+            <label class="horzptions" for="L5">
+            <input type="radio" class="list" name="list" id="L3" value="L3">
+            <div class="infopanel" onclick="scrollunlock()">
+
+                <p>I built this site with standard front-end utilities (HTML, CSS, JS)</p>
+            </div>
+            </label>
+            <label class="horzptions" for="L5">
+            <input type="radio" class="list" name="list" id="L4" value="L4">
+            <div class="infopanel" onclick="scrollunlock()">
+
+                <p>While utilities similar to Bootstrap and JQuery can help in developing powerful websites, I place a high priority on the development and understanding of the underlying utilities offered. While I'm not adverse to using tools like JQuery, I wanted to take advantage to further expand my understanding of what powers it. Furthermore, there are other projects where I've utalized these tools to exhibit of comprehension of them, yet I aspire to avoid a dependancy on these tools.</p>
+            </div>
+            </label>
     </div>
     <div class="panel" id="quad" name="footer">
             <div class="footer">

@@ -1,9 +1,5 @@
 //index.js
 
-function tst(){
-alert("test");
-}
-
 function ratioadj() {
   var w = window.innerWidth;
   var h = window.innerHeight;
@@ -101,4 +97,16 @@ function ratioadj() {
           document.getElementById("longquote").id = "quote";
       }
   }
+}
+
+var body = document.getElementById("bdy");
+
+function scrolllock(){
+    body.style.height = 100 + 'vh';
+    body.style.overflow = 'hidden';
+}
+
+function scrollunlock(){
+    body.style.height = 'auto';
+    body.style.overflow = 'auto';
 }
