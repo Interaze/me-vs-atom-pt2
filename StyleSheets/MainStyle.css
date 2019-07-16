@@ -6,7 +6,6 @@
 }
 
 body{
-    height: 500vh;
     padding: 0;
     margin: 0;
     scroll-snap-type: mandatory;
@@ -340,8 +339,9 @@ p{
     overflow-y: scroll;
     display: flex;
     height: 100vh;
-    width: 0;
-    left: 0;
+    width: 100vw;
+    left: -100vw;
+    opacity: 0.9;
     top: 0;
     z-index: 5;
     background-color: #f7f7f7;
@@ -350,7 +350,8 @@ p{
 }
 
 .list:checked + .infopanel{
-    width: 100vw;
+    left: 0;
+    opacity: 1;
 }
 
 .backOption{

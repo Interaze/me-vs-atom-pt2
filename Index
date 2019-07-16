@@ -68,7 +68,7 @@
             <div class="bearText" id="horzdis">
             <label class="horzptions" for="L1" onclick="scrolllock()"><h4 class="captionTitle" id="optionone">Site's Purpose</h4></label>
             <label class="horzoptions" for="L2" onclick="scrolllock()"><h4 class="captionTitle" id="optiontwo">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
-            <label class="horzoptions" for="L3" onclick="scrolllock()"><h4 class="captionTitle" id="optionthree">Site Build</h4></label>
+            <label class="horzoptions" for="L3" onclick="scrolllock()"><h4 class="captionTitle" id="optionthree">Licensing</h4></label>
             <label class="horzoptions" for="L4" onclick="scrolllock()"><h4 class="captionTitle" id="optionfour">Why Vanilla?</h4></label>
             </div>
 
@@ -83,14 +83,19 @@
             <input type="radio" class="list" name="list" id="L2" value="L2">
             <div class="infopanel" onclick="scrollunlock()">
 
-                <p>Besides the images and Icons that are acredited within the footer of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes along with using :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
+                <p>Besides the images and Icons that are acredited within the Licensing section of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes along with using :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
             </div>
             </label>
             <label class="horzptions" for="L5">
             <input type="radio" class="list" name="list" id="L3" value="L3">
             <div class="infopanel" onclick="scrollunlock()">
 
-                <p>I built this site with standard front-end utilities (HTML, CSS, JS)</p>
+                <p>The initial two slide icons are from <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                <br><br>
+                The final slide icon was made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                <br><br>
+                Background Pattern is from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
+                </p>
             </div>
             </label>
             <label class="horzptions" for="L5">
