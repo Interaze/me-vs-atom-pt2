@@ -32,7 +32,6 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  /*background: #f1f1f1;*/
   visibility: hidden;
 }
 
@@ -101,15 +100,7 @@ img {
     width: 50%;
     background: #f4f4f4;
 }
-/*
-#load-left{
-    height: 100%;
-}
 
-#load-right{
-    height: 100%;
-}
-*/
 .tritle{
     position: relative;
 }
