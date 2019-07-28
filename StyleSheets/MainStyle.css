@@ -513,24 +513,19 @@ option {
     bottom: 0;
 }
 
-#wdL .caption{
-    writing-mode: tb-rl;
+#dual .hvr,.card{
+    background-color: transparent;
+
+    box-shadow: none;
+    webkit-box-shadow: none;
 }
 
-#wdR .caption{
-    writing-mode: tb-rl;
+#dual .caption{
+    background: none;
 }
 
-#wdT{
-    height: 25vh;
-}
-
-#wdB{
-    height: 25vh;
-}
-
-#shrt{
-    height: 50%;
+#dual h5{
+    text-align: center;
 }
 
 .sectionhead{
