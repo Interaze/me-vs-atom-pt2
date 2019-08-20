@@ -410,7 +410,7 @@ option {
 }
 
 .cardlong .hvr{
-    background-size: 15vw;
+    background-size: 12vmin;
 }
 
 .card .wrapper{
@@ -425,7 +425,7 @@ option {
     opacity: 1;
     fill: white;
     background-repeat: no-repeat;
-    background-size: 8vw;
+    background-size: 22%;
     background-position: center;
     -webkit-transition: all 0.8s, -webkit-transform 0.8s;
     transition: all 0.8s, transform 0.8s;
@@ -513,14 +513,23 @@ option {
     bottom: 0;
 }
 
-#dual .hvr,.card{
-    background-color: transparent;
+#dual{
+    margin: auto;
+    /*background-color: #f4f4f4;*/
+    width: 70%;
+    height: 40%;
+    max-width: 1000px;
+    max-height: 600px;
+}
 
+#dual .hvr, #dual .card{
+    background-color: transparent;
+    background-size: calc(10vmin + 5vmax);
     box-shadow: none;
     webkit-box-shadow: none;
 }
 
-#dual .caption{
+#dual .caption, #dual h5{
     background: none;
 }
 
