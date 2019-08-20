@@ -1,6 +1,115 @@
 /* Main Stylesheet */
 *{
     font-family: 'Libre Franklin', sans-serif;
+<<<<<<< HEAD
+=======
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+.test{
+    
+}
+
+img {
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+    opacity: .90;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    position: fixed;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+}
+
+#loader{
+    position: relative;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid transparent;
+    border-top-color: #363c42;
+    margin: -100px 0 0 -100px;
+    z-index: 1002;
+    border-radius: 50%;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    border: 5px solid transparent;
+    border-top-color: #363c42;
+    border-radius: 50%;
+    -webkit-animation: spin 12s linear infinite;
+    animation: spin 12s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    right: 17px;
+    bottom: 17px;
+    border: 5px solid transparent;
+    border-top-color: #363c42;
+    border-radius: 50%;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+}
+
+#load-wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.loadpanel{
+    z-index: 1001;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #f4f4f4;
+}
+
+.tritle{
+    position: relative;
+>>>>>>> CScully
 }
 
 .icon-select{
@@ -19,10 +128,35 @@
     width: 100%;
     position: relative;
     display: block;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+}
+
+#quad:after{
+    opacity: 1.0;
+}
+
+.panel::after{
+    content: "";
+    background: url('../Images/—Pngtree—geometric white background_838934.jpg');
+    background-blend-mode: lighten;
+    background-size: cover;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .titleblock{
+<<<<<<< HEAD
     background-color: red;
+=======
+>>>>>>> CScully
     padding-left: 4px;
     height: 70vh;
     width: auto;
@@ -44,10 +178,17 @@
 
 #longquote h2{
     font-size: calc(2vh + 8vw);
+<<<<<<< HEAD
+=======
+}
+
+#slideshow{
+    height: 90vh;
+    padding-top: calc(3vh + 3vw);
+>>>>>>> CScully
 }
 
 .aboutcontainer{
-    background-color: grey;
     margin: 0;
     position: relative;
     width: 100%;
@@ -71,6 +212,10 @@
 
 h1{
     font-size: calc(4vh + 4vw);
+<<<<<<< HEAD
+=======
+    color: #24292e;
+>>>>>>> CScully
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     max-height: calc(2.6vh + 8vw);
@@ -84,11 +229,16 @@ h2{
     position: relative;
     top: 0;
     left: 0;
-    color: white;
     text-align: left;
     font-size: calc(6vh + 3vw);
+<<<<<<< HEAD
     background-color: orange;
     overflow: hidden;
+=======
+    overflow: hidden;
+    color: #24292e;
+    z-index: 3;
+>>>>>>> CScully
 }
 
 h3{
@@ -98,26 +248,39 @@ h3{
     position: absolute;
     top: 0;
     width: 90%;
-    color: white;
-    background-color: red;
     max-height: 100%;
     font-size: calc(5vh + 2vw);
+<<<<<<< HEAD
     overflow: scroll;
+=======
+    overflow: hidden;
+    color: #24292e;
+>>>>>>> CScully
 }
 
 h4{
     font-size: calc(3vw + 0.5vh);
+<<<<<<< HEAD
+=======
+    color: #24292e;
+>>>>>>> CScully
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: -1%;
 }
 
 h5{
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 98%;
     margin: 0;
     bottom: 0;
+<<<<<<< HEAD
     font-size: calc(2vh + 3vw);
+=======
+    margin-left: 2%;
+    color: #F8F8F8;
+    font-size: calc(3vh + 3vw);
+>>>>>>> CScully
 }
 
 h6{
@@ -126,6 +289,7 @@ h6{
     padding-right: 12%;
     position: relative;
     top: -3%;
+<<<<<<< HEAD
     color: black;
     text-align: center;
     /*font-size: 3vw;*/
@@ -137,10 +301,151 @@ h6{
     width: 25%;
     height: 80%;
     position: relative;
+=======
+    text-align: center;
+    font-size: calc(2vw + 1vh);
+    color: #24292e;
+    background-color: white;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: calc(3vmin + 2vmax);
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+}
+
+.bearText{
+    /*background-color: #f6f6f6;*/
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: fit-content;
+}
+
+#verdis {
+    display: flex;
+}
+
+.vertoptions h4{
+    /*transform: rotate(90deg);*/
+    writing-mode: vertical-rl;
+}
+
+#horzdis{
+    display: block;
+    text-align: left;
+}
+
+.horzoptions h4{
+
+}
+
+.captionTitle{
+    white-space: nowrap;
+    font-size: 15vmin;
+    margin-bottom: 2vh;
+}
+
+.captionTitle:hover {
+    color: rgba(36, 41, 46, .7);
+}
+
+#optionone{
+    margin-left: -2vw;
+}
+
+#optiontwo{
+    margin-left: 10vw;
+}
+
+#optionthree{
+    margin-left: 15vw;
+}
+
+#optionfour{
+    margin-left: 7vw;
+}
+
+.infopanel{
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+    opacity: 0.9;
+    top: 0;
+    z-index: 5;
+    background-color: #f7f7f7;
+    -webkit-transition: all 0.8s, -webkit-transform 0.8s;
+    transition: all 0.8s, transform 0.8s;
+}
+
+.list:checked + .infopanel{
+    left: 0;
+    opacity: 1;
+}
+
+.backOption{
+    margin: 0;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    white-space: nowrap;
+    position: absolute;
+>>>>>>> CScully
+}
+
+.longparagraph{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.list:checked+p{
+    max-height: 100%;
+    height: 100%;
+}
+
+.list+p {
+    height: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+option {
+    height: auto;
+    width: auto;
+}
+
+.list{
+    visibility: hidden;
+    display: none;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.card{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 }
 
 .cardlong{
     width: 90%;
+<<<<<<< HEAD
     height: 20vh;
     background-color: white;
     margin-top: 3%;
@@ -148,6 +453,21 @@ h6{
     bottom: 0;
     position: relative;
     background-color: grey;
+=======
+    height: 25vh;
+    overflow: hidden;
+    margin-left: 5%;
+    bottom: 0;
+    position: relative;
+    background-color: #24292e;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+.cardlong .hvr{
+    background-size: 12vmin;
+>>>>>>> CScully
 }
 
 .card .wrapper{
@@ -156,16 +476,55 @@ h6{
 
 .hvr{
     width: 100%;
-    height: 0%;
-    position: absolute;
-    z-index: 2;
-    background-color: pink;
-}
-
-.card:hover .hvr {
     height: 100%;
+    position: absolute;
+    background-color: #24292e;
+    opacity: 1;
+    fill: white;
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: center;
     -webkit-transition: all 0.8s, -webkit-transform 0.8s;
     transition: all 0.8s, transform 0.8s;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+.card:hover {
+    height: 100.5%;
+    width: 170%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -webkit-transition: all 0.8s, -webkit-transform 0.8s;
+    transition: all 0.8s, transform 0.8s;
+    opacity: 1;
+    z-index: 3;
+}
+
+.card#activetri {
+    height: 100.5%;
+    width: 170%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -webkit-transition: all 0.8s, -webkit-transform 0.8s;
+    transition: all 0.8s, transform 0.8s;
+    opacity: 1;
+    z-index: 3;
+}
+
+#activetri .hvr{
+    opacity: 0;
+}
+
+.cardlong:hover .hvr{
+    opacity: 0;
+}
+
+.card:hover .hvr{
+    opacity: 0;
 }
 
 .link{
@@ -194,14 +553,16 @@ h6{
 .caption{
     bottom: 0;
     width: 100%;
-    height: 20%;
-    background-color: white;
+    height: 15%;
+    min-height: fit-content;
+    background: linear-gradient(to right, #121417 60%, #252a2f);
     position: absolute;
     display: flex;
     align-items: center;
     align-content: center;
 }
 
+<<<<<<< HEAD
 #wdL{
     width: 40%;
     height: 80%;
@@ -224,10 +585,38 @@ h6{
 
 #wdB{
     height: 25vh;
+=======
+.footer{
+    background: linear-gradient(rgb(0,0,0, 0.8) 0%, rgb(37,42,47, 1) 70%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+>>>>>>> CScully
 }
 
-#shrt{
-    height: 50%;
+#dual{
+    margin: auto;
+    /*background-color: #f4f4f4;*/
+    width: 70%;
+    height: 40%;
+    max-width: 1000px;
+    max-height: 600px;
+}
+
+#dual .hvr, #dual .card{
+    background-color: transparent;
+    background-size: calc(10vmin + 5vmax);
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+
+#dual .caption, #dual h5{
+    background: none;
+}
+
+#dual h5{
+    text-align: center;
 }
 
 #triR{
@@ -250,14 +639,165 @@ h6{
 
 .about{
     width: 100%;
-    height: 80vh;
-    position: absolute;
-    margin-bottom: 8vh;
-    margin-top: 12vh;
-    background-color: green;
+    height: 90%;
+    padding-top: calc(9vh + 3vw);
+    position: relative;
 }
 
-body{
-    padding: 0;
+#bar{
     margin: 0;
+    height: 100%;
+    width: 1%;
+    background-color: #38d1ff;
+    z-index: 2;
+    -webkit-transition: all 0.075s, -webkit-transform 0.075s;
+    transition: all 0.075s, transform 0.075s;
+}
+
+.progress{
+    margin: 0;
+    width: 100%;
+    height: 7px;
+    background-color: grey;
+}
+
+#closepanel{
+    animation: closepanel 1s;
+    height: 0%;
+}
+
+#title-fade-in{
+    animation: fade-in-right 2s;
+}
+
+#title-fade-out{
+    opacity: 0.3;
+    transform:translate(20px);
+}
+
+#header-fade-in{
+    animation: fade-in-left 2s;
+}
+
+#header-fade-out{
+    opacity: 0.3;
+    transform: translate(-10px);
+}
+
+#quote-fade-in{
+    animation: fade-in-left 2s;
+}
+
+#slide-fade-in{
+    animation: fade-in-up .5s;
+}
+
+#slide-fade-out{
+    animation: fade-out-down .5s;
+    opacity: 0.3;
+    transform:translate(0, -10px);
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0.3;
+        transform:translate(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-left {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(-10px);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0.3;
+        transform:translate(20px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-right {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(20px);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0.3;
+        transform:translate(0, -10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-down {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        transform:translate(0, -10px);
+    }
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes hideload {
+    from    {
+        opacity: 1;
+        visibility: visible;
+    }
+    to  {
+        opacity: 0;
+    }
+}
+
+@keyframes closepanel {
+    from    {
+        height: 100%;
+    }
+    to  {
+        height: 0;
+    }
 }

@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 function tst(){
 alert("test");
 }
+=======
+//index.js
+>>>>>>> CScully
 
 function ratioadj() {
   var w = window.innerWidth;
@@ -14,13 +18,24 @@ function ratioadj() {
     for (var i = 0, max = Cards.length; i < max; i++) {
         Cards[i].className = "cardlong";
     }
+<<<<<<< HEAD
 
     var Container = document.getElementsByName("trihold");
 
+=======
+
+    var Container = document.getElementsByName("trihold");
+
+>>>>>>> CScully
     for (var i = 0, max = Container.length; i < max; i++) {
         Container[i].style.display = "block";
     }
 
+<<<<<<< HEAD
+=======
+    document.getElementById("slideprogress").style.visibility = 'hidden';
+
+>>>>>>> CScully
     if (document.getElementById("triL")) {
         document.getElementById("triL").id = "LtriT";
     }
@@ -73,6 +88,11 @@ function ratioadj() {
           Container[i].style.display = "flex";
       }
 
+<<<<<<< HEAD
+=======
+      document.getElementById("slideprogress").style.visibility = 'visible';
+
+>>>>>>> CScully
       if(document.getElementById("btitle")){
           document.getElementById("btitle").id = "reg";
       }
@@ -95,4 +115,16 @@ function ratioadj() {
           document.getElementById("longquote").id = "quote";
       }
   }
+}
+
+var body = document.getElementById("bdy");
+
+function scrolllock(){
+    body.style.height = 100 + 'vh';
+    body.style.overflow = 'hidden';
+}
+
+function scrollunlock(){
+    body.style.height = 'auto';
+    body.style.overflow = 'auto';
 }
