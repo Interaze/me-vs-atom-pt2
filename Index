@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="StyleSheets/MainStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
-<<<<<<< HEAD
 
 </head>
 
@@ -21,7 +20,6 @@
             <h1>Chris<wbr>topher
             <h1 style="overflow: auto">Scully</h1>
             <h4>Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
-=======
 </head>
 
 <body onscroll="triggers()" onresize="ratioadj()" id="bdy">
@@ -36,28 +34,23 @@
             <h1 id="title-fade-out">Chris<wbr>topher
             <h1 style="overflow: hidden" id="title-fade-out">Scully</h1>
             <h4 id="title-fade-out">Developer, <wbr>Designer, <wbr>Tutor <br>& Researcher</h4>
->>>>>>> CScully
         </div>
     </div>
     <div class="panel" name="About">
         <div class="aboutcontainer">
             <div class="about">
-<<<<<<< HEAD
             <h2>About</h2>
             <div class="wrapper" id="quote">
                 <h3>"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
-=======
             <h2 id="header-fade-out">About</h2>
             <div class="wrapper" id="quote">
                 <h3 id="header-fade-out">"This is sample text that I will hopefully remove before I publish the website, anyone else who sees this I welcome to my github page and hope you enjoy the show"</h3>
->>>>>>> CScully
             </div>
             </div>
         </div>
     </div>
     <div class="panel" name="My Works">
         <div class="aboutcontainer">
-<<<<<<< HEAD
             <div class="about">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold">
@@ -69,7 +62,6 @@
                 </div>
                 <div class="card" id="triR" name="trifold">
                     <div class="hvr"><div class="wrapper"><div class="link"><p>Click Here</p></div></div></div>
-=======
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
@@ -90,14 +82,12 @@
                     <div class="caption"><h5>Projects</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/code.svg');">
                     </div>
->>>>>>> CScully
                 </div>
                 </div>
                 <div class="progress" id="slideprogress"><div id="bar"></div></div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <a id="Contact"></a>
     <div class="panel" name="Contact Me" style="background-color: black">
         <div class="aboutcontainer">
@@ -114,7 +104,6 @@
                 </div>
             </div>
             <h6 id="license">The license on this website is the standard MIT license, if you could credit me I'd be greatful. Although I'm just text, not a cop.</h6>
-=======
     <div class="panel" style="display: flex;"name="This Site">
         <input type="radio" class="list" name="list" id="L5" value="L5">
             <div class="bearText" id="horzdis">
@@ -177,7 +166,6 @@
                                 </div>
                             </div>
                         </div>
->>>>>>> CScully
             </div>
         </div>
      </div>

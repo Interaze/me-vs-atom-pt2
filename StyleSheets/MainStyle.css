@@ -1,8 +1,6 @@
 /* Main Stylesheet */
 *{
     font-family: 'Libre Franklin', sans-serif;
-<<<<<<< HEAD
-=======
     margin: 0;
     padding: 0;
 }
@@ -16,7 +14,7 @@ body{
 }
 
 .test{
-    
+
 }
 
 img {
@@ -109,7 +107,6 @@ img {
 
 .tritle{
     position: relative;
->>>>>>> CScully
 }
 
 .icon-select{
@@ -153,10 +150,7 @@ img {
 }
 
 .titleblock{
-<<<<<<< HEAD
     background-color: red;
-=======
->>>>>>> CScully
     padding-left: 4px;
     height: 70vh;
     width: auto;
@@ -178,14 +172,11 @@ img {
 
 #longquote h2{
     font-size: calc(2vh + 8vw);
-<<<<<<< HEAD
-=======
 }
 
 #slideshow{
     height: 90vh;
     padding-top: calc(3vh + 3vw);
->>>>>>> CScully
 }
 
 .aboutcontainer{
@@ -212,10 +203,7 @@ img {
 
 h1{
     font-size: calc(4vh + 4vw);
-<<<<<<< HEAD
-=======
     color: #24292e;
->>>>>>> CScully
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     max-height: calc(2.6vh + 8vw);
@@ -231,14 +219,11 @@ h2{
     left: 0;
     text-align: left;
     font-size: calc(6vh + 3vw);
-<<<<<<< HEAD
     background-color: orange;
     overflow: hidden;
-=======
     overflow: hidden;
     color: #24292e;
     z-index: 3;
->>>>>>> CScully
 }
 
 h3{
@@ -250,20 +235,14 @@ h3{
     width: 90%;
     max-height: 100%;
     font-size: calc(5vh + 2vw);
-<<<<<<< HEAD
     overflow: scroll;
-=======
     overflow: hidden;
     color: #24292e;
->>>>>>> CScully
 }
 
 h4{
     font-size: calc(3vw + 0.5vh);
-<<<<<<< HEAD
-=======
     color: #24292e;
->>>>>>> CScully
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: -1%;
@@ -274,13 +253,10 @@ h5{
     width: 98%;
     margin: 0;
     bottom: 0;
-<<<<<<< HEAD
     font-size: calc(2vh + 3vw);
-=======
     margin-left: 2%;
     color: #F8F8F8;
     font-size: calc(3vh + 3vw);
->>>>>>> CScully
 }
 
 h6{
@@ -289,7 +265,6 @@ h6{
     padding-right: 12%;
     position: relative;
     top: -3%;
-<<<<<<< HEAD
     color: black;
     text-align: center;
     /*font-size: 3vw;*/
@@ -301,7 +276,6 @@ h6{
     width: 25%;
     height: 80%;
     position: relative;
-=======
     text-align: center;
     font-size: calc(2vw + 1vh);
     color: #24292e;
@@ -397,7 +371,6 @@ p{
     margin-top: 1vw;
     white-space: nowrap;
     position: absolute;
->>>>>>> CScully
 }
 
 .longparagraph{
@@ -445,7 +418,6 @@ option {
 
 .cardlong{
     width: 90%;
-<<<<<<< HEAD
     height: 20vh;
     background-color: white;
     margin-top: 3%;
@@ -453,7 +425,6 @@ option {
     bottom: 0;
     position: relative;
     background-color: grey;
-=======
     height: 25vh;
     overflow: hidden;
     margin-left: 5%;
@@ -467,7 +438,6 @@ option {
 
 .cardlong .hvr{
     background-size: 12vmin;
->>>>>>> CScully
 }
 
 .card .wrapper{
@@ -562,7 +532,6 @@ option {
     align-content: center;
 }
 
-<<<<<<< HEAD
 #wdL{
     width: 40%;
     height: 80%;
@@ -585,14 +554,13 @@ option {
 
 #wdB{
     height: 25vh;
-=======
+}
 .footer{
     background: linear-gradient(rgb(0,0,0, 0.8) 0%, rgb(37,42,47, 1) 70%);
     height: 100vh;
     width: 100vw;
     position: absolute;
     bottom: 0;
->>>>>>> CScully
 }
 
 #dual{
