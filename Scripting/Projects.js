@@ -8,13 +8,17 @@ function renderSlide(toRender){
 
 function showNextSlide() {
   var xhttp;
-  slidesrendered = slidesrendered + 1;
+  var slide = "Slide"+slidesrendered;
+  console.log(slide);
+
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("topp").innerHTML = this.responseText;
+    //need new after element
+    //document.getElementById(slide).after(this.responseText);
     }
   };
+  slidesrendered = slidesrendered + 1;
   xhttp.open("GET", "../Scripting/Render.php?q="+slidesrendered, true);
   xhttp.send();
 }

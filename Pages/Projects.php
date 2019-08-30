@@ -1,7 +1,3 @@
-<?php
-
-
-?>
 <html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
@@ -23,7 +19,7 @@
     <div class="loadpanel" id="load-left" style="top: 0; left: 0;"></div>
     <div class="loadpanel" id="load-right" style="bottom: 0;right: 0;"></div>
     </div>
-    <div class="panel" id="topp" onclick="showNextSlide();" name="Title">
+    <div class="panel" id="Slide0" onclick="showNextSlide();" name="Title">
 
     </div>
     <script src="../Scripting/Progress.js"></script>
