@@ -1,3 +1,11 @@
+<?php
+/*test pass test123*/
+$mysqli = new mysqli("localhost:3306", "SiteRender", "test123", "Portfolio");
+if($mysqli->connect_error) {
+  exit('Could not connect');
+}
+
+?>
 <html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
@@ -22,10 +30,8 @@
     <div class="panel" id="topp" name="Title">
 
     </div>
-    <div class="panel" id="topp" name="Title">
-
-    </div>
-    <script src="../Scripting/progress.js"></script>
-  <script type='text/javascript'>closeLoad();</script>
+    <script src="../Scripting/Progress.js"></script>
+    <script src="../Scripting/Projects.js"></script>
+  <script type='text/javascript'>renderSlide(1);closeLoad();</script>
 </body>
 </html>
