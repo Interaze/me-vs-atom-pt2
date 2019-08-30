@@ -496,7 +496,6 @@ option {
 .caption{
     bottom: 0;
     width: 100%;
-    height: 15%;
     min-height: fit-content;
     background: linear-gradient(to right, #121417 60%, #252a2f);
     position: absolute;
