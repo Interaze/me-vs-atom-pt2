@@ -1,15 +1,11 @@
 <?php
-/*test pass test123*/
-$mysqli = new mysqli("localhost:3306", "SiteRender", "test123", "Portfolio");
-if($mysqli->connect_error) {
-  exit('Could not connect');
-}
+
 
 ?>
 <html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
-  <title>Chris Scully</title>
+  <title>Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Main Landing for Christopher Scully's portfolio, for updates, developments or any new information regarding potential projects">
   <meta name="author" content="Christopher Scully">
@@ -27,11 +23,11 @@ if($mysqli->connect_error) {
     <div class="loadpanel" id="load-left" style="top: 0; left: 0;"></div>
     <div class="loadpanel" id="load-right" style="bottom: 0;right: 0;"></div>
     </div>
-    <div class="panel" id="topp" name="Title">
+    <div class="panel" id="topp" onclick="showNextSlide();" name="Title">
 
     </div>
     <script src="../Scripting/Progress.js"></script>
     <script src="../Scripting/Projects.js"></script>
-  <script type='text/javascript'>renderSlide(1);closeLoad();</script>
+  <script type='text/javascript'>renderSlide();closeLoad();</script>
 </body>
 </html>
