@@ -9,6 +9,9 @@
   <meta name="author" content="Christopher Scully">
 
   <link rel="stylesheet" href="StyleSheets/MainStyle.css">
+  <link rel="stylesheet" href="StyleSheets/Slides.css">
+  <link rel="stylesheet" href="StyleSheets/Loader.css">
+  <link rel="stylesheet" href="StyleSheets/Animations.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 </head>
 
@@ -131,6 +134,7 @@
     </div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
+  <script src="Scripting/progress.js"></script>
   <script type='text/javascript'>ratioadj();setmoveop();triggers();closeLoad();</script>
 </body>
 </html>
