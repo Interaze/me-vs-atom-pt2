@@ -43,9 +43,6 @@ function ratioadj() {
     }
 
 }
-  else if (x > 2) {
-
-  }
   else {
 
   }
