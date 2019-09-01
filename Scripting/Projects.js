@@ -27,3 +27,26 @@ function showNextSlide() {
   xhttp.open("GET", "../Scripting/Render.php?q="+slidesrendered, true);
   xhttp.send();
 }
+
+function ratioadj() {
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  var x = w/h;
+  console.log(x);
+  if (x < .90) {
+
+    if(x<.75){
+
+    }
+    else {
+
+    }
+
+}
+  else if (x > 2) {
+
+  }
+  else {
+
+  }
+}
