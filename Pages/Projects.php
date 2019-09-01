@@ -44,7 +44,6 @@
             </p>
         </div>
         </span>
-<<<<<<< HEAD
     </div>
     <div class="panel" id="Slide0" onclick="showNextSlide();" name="Title">
         <span class="holds">
@@ -59,8 +58,6 @@
                 <img class="projectimg" src="../Images/Project1.png">
             </div>
         </span>
-=======
->>>>>>> 94405d98307c33c6218dd9bee8f82387e7cd8006
     </div>
     <script src="../Scripting/Progress.js"></script>
     <script src="../Scripting/Projects.js"></script>

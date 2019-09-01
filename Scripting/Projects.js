@@ -43,12 +43,6 @@ function ratioadj() {
     }
 
 }
-<<<<<<< HEAD
-=======
-  else if (x > 2) {
-
-  }
->>>>>>> 94405d98307c33c6218dd9bee8f82387e7cd8006
   else {
 
   }
