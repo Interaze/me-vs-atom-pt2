@@ -3,7 +3,7 @@
 var slidesrendered = 0;
 
 function renderSlide(toRender){
-    console.log("test");
+    showNextSlide();
 }
 
 function showNextSlide() {
@@ -13,13 +13,11 @@ function showNextSlide() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
-    console.log(slide);
     console.log(this.responseText);
 
     var temp = document.createElement('div');
     temp.innerHTML = this.responseText;
 
-    //https://stackoverflow.com/questions/494143/creating-a-new-dom-element-from-an-html-string-using-built-in-dom-methods-or-pro
     document.getElementById("bdy").appendChild(temp.firstChild);
     }
   };
