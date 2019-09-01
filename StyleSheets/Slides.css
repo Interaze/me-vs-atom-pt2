@@ -43,6 +43,7 @@ body{
     background: url('../Images/—Pngtree—geometric white background_838934.jpg');
     background-blend-mode: lighten;
     background-size: cover;
+    display: inline-block;
     opacity: 0.35;
     top: 0;
     left: 0;
