@@ -4,10 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Chris Scully</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Main Landing for Christopher Scully's portfolio, for updates, developments or any new information regarding potential projects">
   <meta name="author" content="Christopher Scully">
 
-  <link rel="stylesheet" href="StyleSheets/MainStyle.css">
+  <link rel="stylesheet" href="StyleSheets/IndexStyle.css">
+  <link rel="stylesheet" href="StyleSheets/Slides.css">
+  <link rel="stylesheet" href="StyleSheets/Loader.css">
+  <link rel="stylesheet" href="StyleSheets/Animations.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 
 </head>
@@ -66,19 +70,19 @@
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
                 <div class="card" name="trifold" onmouseover="changeslide(1);">
-                    <img src="../Images/Mizzou-columns-JayBuffington.jpg">
+                    <img src="../Images/Mizzou-columns-JayBuffington.jpg" alt="Mizzou Columns">
                     <div class="caption"><h5>Academic Involvement</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/library.svg');">
                     </div>
                 </div>
                 <div class="card" name="trifold" onmouseover="changeslide(2);">
-                    <img src="../Images/resume-stock.png">
+                    <img src="../Images/resume-stock.png" alt="resume image">
                     <div class="caption"><h5>My Resume</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/exam.svg');">
                     </div>
                 </div>
                 <div class="card" name="trifold" onmouseover="changeslide(3);">
-                    <img src="../Images/my works.jpg">
+                    <img src="../Images/my works.jpg" alt="photo of code">
                     <div class="caption"><h5>Projects</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/code.svg');">
                     </div>
@@ -124,18 +128,18 @@
             <input type="radio" class="list" name="list" id="L2" value="L2">
             <div class="infopanel" onclick="scrollunlock()">
 
-                <p>Besides the images and Icons that are acredited within the Licensing section of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes along with using :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
+                <p>Besides the images and Icons that are acredited within the Licensing section of my site, the only resource of major note would be the loading screen, which I gained guidence through from Petr Tichy from his <a href="https://ihatetomatoes.net/create-css3-spinning-preloader/" rel="noreferrer">blog post</a> covering a page loader animation. His design was both ingenious and clean, and I utalized his method of keyframes along with using :before and :after to rotate 3 loading bars on a singular div. Beyond that everying including the slideshow was designed and developed by me.</p>
             </div>
             </label>
             <label class="horzptions" for="L5">
             <input type="radio" class="list" name="list" id="L3" value="L3">
             <div class="infopanel" onclick="scrollunlock()">
 
-                <p>The initial two slide icons are from <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                <p>The initial two slide icons are from <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski" rel="noreferrer">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon" rel="noreferrer">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noreferrer">CC 3.0 BY</a>
                 <br><br>
-                The final slide icon was made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                The final slide icon was made by <a href="https://www.freepik.com/?__hstc=57440181.0b0a4dce73416542b9916801a6b44a76.1562369188125.1562369188125.1562369188125.1&__hssc=57440181.5.1562369188126&__hsfp=690007401" title="Freepik" rel="noreferrer">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" rel="noreferrer">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noreferrer">CC 3.0 BY</a>
                 <br><br>
-                Background Pattern is from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html">pngtree.com</a>
+                Background Pattern is from  <a href="https://pngtree.com/freebackground/geometric-white-background_838934.html" rel="noreferrer">pngtree.com</a>
                 </p>
             </div>
             </label>
@@ -171,6 +175,7 @@
      </div>
   <script src="Scripting/Index.js"></script>
   <script src="Scripting/Animations.js"></script>
+  <script src="Scripting/progress.js"></script>
   <script type='text/javascript'>ratioadj();setmoveop();triggers();closeLoad();</script>
 </body>
 </html>

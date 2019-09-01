@@ -3,7 +3,11 @@
 var slidesrendered = 0;
 
 function renderSlide(toRender){
+<<<<<<< HEAD
     console.log("test");
+=======
+    showNextSlide();
+>>>>>>> CScully
 }
 
 function showNextSlide() {
@@ -13,13 +17,19 @@ function showNextSlide() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
+<<<<<<< HEAD
     console.log(slide);
+=======
+>>>>>>> CScully
     console.log(this.responseText);
 
     var temp = document.createElement('div');
     temp.innerHTML = this.responseText;
 
+<<<<<<< HEAD
     //https://stackoverflow.com/questions/494143/creating-a-new-dom-element-from-an-html-string-using-built-in-dom-methods-or-pro
+=======
+>>>>>>> CScully
     document.getElementById("bdy").appendChild(temp.firstChild);
     }
   };
