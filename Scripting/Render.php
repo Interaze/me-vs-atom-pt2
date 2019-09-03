@@ -15,14 +15,13 @@
 
         if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
-        
         echo '<div class="panel" id="Slide'.$nextslide.'">';
+        if($nextslide % 2 == 0){
             echo '<span class="holds">';
                 echo '<div class="frame">';
                     echo '<img class="projectimg" scr"../Images/'.$row["Image"].'">';
                 echo '</div>';
             echo '</span>';
-
             echo '<span class="holds">';
             echo '<div class="textbox">';
                 echo '<p>';
@@ -30,6 +29,22 @@
                 echo '</p>';
             echo '</div>';
             echo '</span>';
+        
+        }
+        else{
+            echo '<span class="holds">';
+                echo '<div class="textbox">';
+                    echo '<p>';
+                        echo '<strong><b><u>'.$row["Title"].', '.$row["Date"].':</u></b></strong> '.$row["Description"].'';
+                    echo '</p>';
+                echo '</div>';
+            echo '</span>';
+            echo '<span class="holds">';
+                echo '<div class="frame">';
+                    echo '<img class="projectimg" scr"../Images/'.$row["Image"].'">';
+                echo '</div>';
+            echo '</span>';
+        }
         echo '</div>';
         }
     }

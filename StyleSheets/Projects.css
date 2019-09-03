@@ -9,6 +9,16 @@
     display: block;
 }
 
+.panel::before{
+    height: 150vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    z-index: -2;
+}
+
 .frame{
     margin: auto;
     display: flex;
@@ -39,4 +49,11 @@
 
 .holds{
     display: inline-block;
+}
+
+.overscroll{
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    top: -50vh;
 }

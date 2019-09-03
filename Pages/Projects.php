@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 
   <style>
+    body{
+        overflow-x: hidden;
+    }
     .panel{
         display: flex;
     }
@@ -82,5 +85,6 @@
         renderSlide();
     </script>
     <script type='text/javascript'>ratioadj();closeLoad();</script>
+    <div class="overscroll" id="end"></div>
 </body>
 </html>
