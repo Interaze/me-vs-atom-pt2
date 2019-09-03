@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
@@ -23,8 +24,29 @@
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
 </head>
+<script>
+    var projPK = [-1,-1];
+    var PKnum = 0;
+<?php
+    $mysqli = new mysqli("localhost:3306", "SiteRender", "test123", "Portfolio");
 
-<body id="bdy" onresize="ratioadj();">
+    if($mysqli->connect_error) {
+        exit('Could not connect');
+    }
+
+    $incr = 0;
+    $list = "SELECT PK FROM Projects WHERE Visabillity='1' ORDER BY Date DESC";
+    $result = $mysqli->query($list);
+
+    while($test = mysqli_fetch_assoc($result)){
+        //echo $test['PK']; //Displays the database id
+        echo "\tprojPK[",$incr,"] = ",$test['PK'],";\n";
+        $incr++;
+    }
+?>
+    console.log(projPK[1]);
+</script>
+<body id="bdy" onscroll="triggers();" onresize="ratioadj();">
     <!-- loading design was inspired by Petr Tichy from his blog post on https://ihatetomatoes.net/create-css3-spinning-preloader/ -->
     <div id="load-wrapper">
     <div id="loader"></div>
@@ -47,6 +69,6 @@
     </div>
     <script src="../Scripting/Progress.js"></script>
     <script src="../Scripting/Projects.js"></script>
-    <script type='text/javascript'>ratioadj();renderSlide();closeLoad();</script>
+    <script type='text/javascript'>ratioadj();renderSlide(projPK[PKnum++]);closeLoad();</script>
 </body>
 </html>

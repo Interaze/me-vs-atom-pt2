@@ -3,10 +3,10 @@
 var slidesrendered = 0;
 
 function renderSlide(toRender){
-    showNextSlide();
+    showNextSlide(toRender);
 }
 
-function showNextSlide() {
+function showNextSlide(toRender) {
   var xhttp;
   var slide = "Slide"+slidesrendered;
   xhttp = new XMLHttpRequest();
@@ -18,11 +18,13 @@ function showNextSlide() {
     var temp = document.createElement('div');
     temp.innerHTML = this.responseText;
 
+    console.log(temp.firstChild);
+
     document.getElementById("bdy").appendChild(temp.firstChild);
     }
   };
   slidesrendered = slidesrendered + 1;
-  xhttp.open("GET", "../Scripting/Render.php?q="+slidesrendered, true);
+  xhttp.open("GET", "../Scripting/Render.php?q="+slidesrendered+"&j="+toRender, true);
   xhttp.send();
 }
 
@@ -47,4 +49,17 @@ function ratioadj() {
   else {
 
   }
+}
+
+function triggers(){
+    var prgrss = scrollprogTrig();
+
+        var pageheight = Math.round(prgrss);
+        console.log(pageheight);
+}
+
+function scrollprogTrig(){
+    var marker = document.getElementById("tml");
+    var pageheight = Number(marker.scrollTop / window.innerHeight).toFixed(2);
+    return(pageheight);
 }
