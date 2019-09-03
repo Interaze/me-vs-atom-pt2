@@ -1,9 +1,12 @@
 //Projects.js
 
 var slidesrendered = 0;
+var indoc = document.getElementById("bdy");
 
-function renderSlide(toRender){
-    showNextSlide(toRender);
+function renderSlide(){
+    console.log(projPK[PKnum], PKnum);
+    showNextSlide(projPK[PKnum]);
+    PKnum++;
 }
 
 function showNextSlide(toRender) {
@@ -13,14 +16,10 @@ function showNextSlide(toRender) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
-    console.log(this.responseText);
-
-    var temp = document.createElement('div');
-    temp.innerHTML = this.responseText;
-
-    console.log(temp.firstChild);
-
-    document.getElementById("bdy").appendChild(temp.firstChild);
+    var range = document.createRange();
+    range.selectNodeContents(indoc);
+    var frag = range.createContextualFragment(this.responseText);
+    indoc.appendChild(frag);
     }
   };
   slidesrendered = slidesrendered + 1;
@@ -53,7 +52,7 @@ function ratioadj() {
 
 function triggers(){
     var prgrss = scrollprogTrig();
-
+        console.log(prgrss);
         var pageheight = Math.round(prgrss);
         console.log(pageheight);
 }
