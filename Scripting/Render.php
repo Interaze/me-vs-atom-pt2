@@ -17,29 +17,29 @@
         $row = $result->fetch_assoc();
         echo '<div class="panel" id="Slide'.$nextslide.'">';
         if($nextslide % 2 == 0){
-            echo '<span class="holds">';
+            echo '<span class="holds" id="image-fade-left">';
                 echo '<div class="frame">';
                     echo '<img class="projectimg" scr"../Images/'.$row["Image"].'">';
                 echo '</div>';
             echo '</span>';
             echo '<span class="holds">';
-            echo '<div class="textbox">';
+            echo '<div class="textbox" id="text-in">';
                 echo '<p>';
-                    echo '<strong><b><u>'.$row["Title"].', '.$row["Date"].':</u></b></strong> '.$row["Description"].'';
+                    echo '<strong><b><u>'.$row["Title"].', '.date("M d, Y", strtotime($row["Date"])).':</u></b></strong> '.$row["Description"].'';
                 echo '</p>';
             echo '</div>';
             echo '</span>';
-        
+
         }
         else{
-            echo '<span class="holds">';
+            echo '<span class="holds" id="text-in">';
                 echo '<div class="textbox">';
                     echo '<p>';
-                        echo '<strong><b><u>'.$row["Title"].', '.$row["Date"].':</u></b></strong> '.$row["Description"].'';
+                        echo '<strong><b><u>'.$row["Title"].', '.date("M d, Y", strtotime($row["Date"])).':</u></b></strong> '.$row["Description"].'';
                     echo '</p>';
                 echo '</div>';
             echo '</span>';
-            echo '<span class="holds">';
+            echo '<span class="holds" id="image-fade-right">';
                 echo '<div class="frame">';
                     echo '<img class="projectimg" scr"../Images/'.$row["Image"].'">';
                 echo '</div>';
@@ -50,4 +50,5 @@
     }
 
     loadSlide();
+    mysqli_close($mysqli);
 ?>

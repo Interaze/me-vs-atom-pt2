@@ -1,7 +1,8 @@
 //Projects.js
 
 var slidesrendered = 0;
-var indoc = document.getElementById("bdy");
+var indoc = document.getElementById("wrapper");
+var triggerlock = 0;
 
 function renderSlide(){
     console.log(projPK[PKnum], PKnum);
@@ -20,9 +21,9 @@ function showNextSlide(toRender) {
     range.selectNodeContents(indoc);
     var frag = range.createContextualFragment(this.responseText);
     indoc.appendChild(frag);
+    slidesrendered = slidesrendered + 1;
     }
   };
-  slidesrendered = slidesrendered + 1;
   xhttp.open("GET", "../Scripting/Render.php?q="+slidesrendered+"&j="+toRender, true);
   xhttp.send();
 }
@@ -52,9 +53,10 @@ function ratioadj() {
 
 function triggers(){
     var prgrss = scrollprogTrig();
-        console.log(prgrss);
-        var pageheight = Math.round(prgrss);
-        console.log(pageheight);
+        if(((prgrss) - triggerlock) > 0.3){
+            renderSlide();
+            triggerlock++;
+        }
 }
 
 function scrollprogTrig(){
