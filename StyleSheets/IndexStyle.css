@@ -16,6 +16,11 @@ img {
     position: relative;
 }
 
+.trilink{
+    width: fit-content;
+    display: contents;
+}
+
 .icon-select{
     position: fixed;
     background-color: white;

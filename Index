@@ -44,24 +44,30 @@
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
+                <a class="trilink" href="#">
                 <div class="card" name="trifold" onmouseover="changeslide(1);">
                     <img src="../Images/Mizzou-columns-JayBuffington.jpg" alt="Mizzou Columns">
                     <div class="caption"><h5>Academic Involvement</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/library.svg');">
                     </div>
                 </div>
+                </a>
+                <a class="trilink" href="#">
                 <div class="card" name="trifold" onmouseover="changeslide(2);">
                     <img src="../Images/resume-stock.png" alt="resume image">
                     <div class="caption"><h5>My Resume</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/exam.svg');">
                     </div>
                 </div>
+                </a>
+                <a class="trilink" href="/pages/projects.php">
                 <div class="card" name="trifold" onmouseover="changeslide(3);">
                     <img src="../Images/my works.jpg" alt="photo of code">
                     <div class="caption"><h5>Projects</h5></div>
                     <div class="hvr" style="background-image: url('../Images/182316-education/svg/code.svg');">
                     </div>
                 </div>
+                </a>
                 </div>
                 <div class="progress" id="slideprogress"><div id="bar"></div></div>
             </div>
