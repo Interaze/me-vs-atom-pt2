@@ -57,7 +57,6 @@
             $result = $mysqli->query($list);
 
             while($test = mysqli_fetch_assoc($result)){
-                //echo $test['PK']; //Displays the database id
                 echo "\tprojPK[",$incr,"] = ",$test['PK'],";\n";
                 $incr++;
             }
@@ -65,7 +64,6 @@
         ?>
 
         function renderSlide(){
-            //console.log(projPK[PKnum], PKnum);
             if(projPK[PKnum] != -9){
             showNextSlide(projPK[PKnum]);
             PKnum++;

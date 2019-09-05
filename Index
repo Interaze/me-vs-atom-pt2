@@ -80,7 +80,7 @@
             <input type="radio" class="list" name="list" id="L1" value="L1">
             <div class="infopanel" onclick="scrollunlock()">
 
-                <p>While I've worked with HTML and CSS since 8th grade, and pickup up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
+                <p>While I've worked with HTML and CSS since 8th grade, and picked up further when I was a Sophomore in Highschool, I realized there wasn't many sites that I felt accurately exhibited my design style. This Site's intent is to develop and maintain the technical experience I've accumulated while exhibiting my personal design style for future employers or anyone with an interest.</p>
             </div>
             </label>
             <label class="horzptions" for="L5">
