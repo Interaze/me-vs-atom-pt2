@@ -142,15 +142,19 @@ h5{
 }
 
 h6{
-    margin: 0;
-    padding-left: 12%;
-    padding-right: 12%;
+    color: #F8F8F8;
+    font-size: calc(1.5vmin + 1.5vmax);
+}
+
+.usage{
     position: relative;
-    top: -3%;
-    text-align: center;
-    font-size: calc(2vw + 1vh);
-    color: #24292e;
-    background-color: white;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    height: 30vh;
+    background-color: rgb(0,0,0,0.83);
+    position: absolute;
+    bottom: 0;
 }
 
 p{
@@ -388,7 +392,7 @@ option {
     bottom: 0;
     width: 100%;
     min-height: fit-content;
-    background: linear-gradient(to right, #121417 60%, #252a2f);
+    background-color: #121417;
     position: absolute;
     display: flex;
     align-items: center;

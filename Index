@@ -116,26 +116,27 @@
             </div>
             </label>
     </div>
-    <div class="panel" id="quad" name="footer">
-            <div class="footer">
-                    <div class="aboutcontainer">
-                        <div class="about" id="slideshow">
-                            <h2 class="tritle" name="tritle" style="color: #f4f4f4;">Additional</h2>
-                            <div class="wrapper" name="trihold" id="dual">
-                                <div class="card" name="trifold" style="pointer-events: none;">
-                                    <div class="caption"><h5>Contact</h5></div>
-                                    <div class="hvr" style="background-image: url('../Images/contact.svg');">
-                                    </div>
-                                    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-                                </div>
-                                <div class="card" name="trifold" style="pointer-events: none;">
-                                    <div class="caption"><h5>My GitHub</h5></div>
-                                    <div class="hvr" style="background-image: url('../Images/github.svg');"><!--https://simpleicons.org/?q=github-->
-                                    </div>
-                                </div>
-                            </div>
+    <div class="panel" name="footer">
+        <div class="aboutcontainer">
+            <div class="about" id="slideshow">
+                <h2 class="tritle" name="tritle">Additional</h2>
+                <div class="wrapper" name="trihold" id="dual">
+                    <div class="card" name="trifold" style="pointer-events: none;">
+                        <div class="caption"><h5>Contact</h5></div>
+                        <div class="hvr" style="background-image: url('../Images/contact.svg');">
                         </div>
+                        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                    </div>
+                    <div class="card" name="trifold" style="pointer-events: none;">
+                        <div class="caption"><h5>My GitHub</h5></div>
+                        <div class="hvr" style="background-image: url('../Images/github.svg');"><!--https://simpleicons.org/?q=github-->
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="usage">
+            <h6>For all of the source code of the site, I'll have it posted on my GitHub. If you want to experiment with a slide based webpage, I'm open to any usage of my design and layout. Yet as a developer I'd want it to be sourced back to me.</h6>
         </div>
     </div>
   <script src="Scripting/Index.js"></script>
