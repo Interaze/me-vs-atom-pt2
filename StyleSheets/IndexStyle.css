@@ -436,6 +436,22 @@ option {
     height: 10vh;
 }
 
+.addtnl{
+    margin: 0 auto;
+    position: relative;
+}
+
+.sublogo{
+    width: auto;
+    height: 100px;;
+    position: relative;
+    margin: 5px auto;
+}
+
+.addtnl p{
+    text-align: center;
+}
+
 .about{
     width: 100%;
     height: 90%;

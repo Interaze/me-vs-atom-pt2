@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 </a>
-                <a class="trilink" href="#">
+                <a class="trilink" href="../Images/resume.pdf">
                 <div class="card" name="trifold" onmouseover="changeslide(2);">
                     <img src="../Images/resume-stock.png" alt="resume image">
                     <div class="caption"><h5>My Resume</h5></div>
@@ -77,7 +77,7 @@
         <input type="radio" class="list" name="list" id="L5" value="L5">
             <div class="bearText" id="horzdis">
             <label class="horzptions" for="L1" onclick="scrolllock()"><h4 class="captionTitle" id="optionone">Site's Purpose</h4></label>
-            <label class="horzoptions" for="L2" onclick="scrolllock()"><h4 class="captionTitle" id="optiontwo">Crediting</h4><!--<div class="cornerShape" style="bottom: -1px; left: -1px;background: linear-gradient(225deg, transparent 30px, rgb(23, 26, 30, 1) 0);"></div>--></label>
+            <label class="horzoptions" for="L2" onclick="scrolllock()"><h4 class="captionTitle" id="optiontwo">Crediting</h4></label>
             <label class="horzoptions" for="L3" onclick="scrolllock()"><h4 class="captionTitle" id="optionthree">Licensing</h4></label>
             <label class="horzoptions" for="L4" onclick="scrolllock()"><h4 class="captionTitle" id="optionfour">Why Vanilla?</h4></label>
             </div>
@@ -118,25 +118,13 @@
     </div>
     <div class="panel" name="footer">
         <div class="aboutcontainer">
-            <div class="about" id="slideshow">
-                <h2 class="tritle" name="tritle">Additional</h2>
-                <div class="wrapper" name="trihold" id="dual">
-                    <div class="card" name="trifold" style="pointer-events: none;">
-                        <div class="caption"><h5>Contact</h5></div>
-                        <div class="hvr" style="background-image: url('../Images/contact.svg');">
-                        </div>
-                        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-                    </div>
-                    <div class="card" name="trifold" style="pointer-events: none;">
-                        <div class="caption"><h5>My GitHub</h5></div>
-                        <div class="hvr" style="background-image: url('../Images/github.svg');"><!--https://simpleicons.org/?q=github-->
-                        </div>
-                    </div>
+            <div class="about">
+                <h2>Additional</h2>
+                <div class="addtnl"><p>For all of the source code of the site, I'll have it posted on my GitHub. If you want to experiment with a slide based webpage, I'm open to any usage of my design and layout. Yet as a developer I'd want it to be sourced back to me.</p>
+                    <a href="https://github.com/Interaze/me-vs-atom-pt2"><img class="sublogo" src="../Images/github.svg"></a>
                 </div>
             </div>
-        </div>
-        <div class="usage">
-            <h6>For all of the source code of the site, I'll have it posted on my GitHub. If you want to experiment with a slide based webpage, I'm open to any usage of my design and layout. Yet as a developer I'd want it to be sourced back to me.</h6>
+
         </div>
     </div>
   <script src="Scripting/Index.js"></script>

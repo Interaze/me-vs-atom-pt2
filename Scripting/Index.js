@@ -143,17 +143,27 @@ function SlideFour(toggle, prgrss){
 }
 
 var S5Header = slide[4].getElementsByTagName("H2")[0];
+var S5Text = slide[4].getElementsByTagName("P")[0];
+var S5Img = slide[4].getElementsByTagName("IMG")[0];
 
 function SlideFive(toggle){
     if(CurrentSlides[4] != toggle){
         if(toggle == 1){
             console.log('Open Slide Five');
             S5Header.id = "header-fade-in";
+            S5Text.id = "text-in";
+            setTimeout(function(){
+                S5Img.id = "text-in";
+            }, 400);
             CurrentSlides[4] = 1;
         }
         else {
             console.log('Close Slide Five');
             S5Header.id = "header-fade-out";
+            S5Text.id = "text-out";
+            setTimeout(function(){
+                S5Img.id = "text-out";
+            }, 400);
             CurrentSlides[4] = 0;
         }
     }
