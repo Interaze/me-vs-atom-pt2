@@ -2,9 +2,9 @@
 <html lang="en" id="tml">
 <head>
   <meta charset="utf-8">
-  <title>My Works</title>
+  <title>Involvement</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A list of Projects Developed by me">
+  <meta name="description" content="A List of My Academic Involvement on Campus">
   <meta name="author" content="Christopher Scully">
 
   <link rel="stylesheet" href="../StyleSheets/Loader.css">
@@ -40,7 +40,7 @@
     <div class="overscroll" id="end"></div>
 
     <script src="../Scripting/Progress.js"></script>
-    <script src="../Scripting/Projects.js"></script>
+    <script src="../Scripting/Academics.js"></script>
     <script>
         var projPK = [-1,-1];
         var PKnum = 0;
@@ -53,7 +53,7 @@
             }
 
             $incr = 0;
-            $list = "SELECT PK FROM Projects WHERE Visibility='1' ORDER BY Date DESC";
+            $list = "SELECT PK FROM Academics WHERE Visibility='1' ORDER BY Date DESC";
             $result = $mysqli->query($list);
 
             while($test = mysqli_fetch_assoc($result)){

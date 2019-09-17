@@ -10,7 +10,7 @@
         $nextslide = $_GET["q"];
         $pk = $_GET["j"];
 
-        $list = "SELECT * FROM Projects WHERE PK=".$pk." AND VISIBILITY=1";
+        $list = "SELECT * FROM Academics WHERE PK=".$pk." AND VISIBILITY=1";
         $result = $mysqli->query($list);
 
         if ($result->num_rows == 1) {

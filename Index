@@ -45,7 +45,7 @@
             <div class="about" id="slideshow">
                 <h2 class="tritle" name="tritle">My Works</h2>
                 <div class="wrapper" name="trihold" onmouseover="slides(0);" onmouseout="slides(1);">
-                <a class="trilink" href="#">
+                <a class="trilink" href="/pages/CourseWork.php">
                 <div class="card" name="trifold" onmouseover="changeslide(1);">
                     <img src="../Images/Mizzou-columns-JayBuffington.jpg" alt="Mizzou Columns">
                     <div class="caption"><h5>Academic Involvement</h5></div>

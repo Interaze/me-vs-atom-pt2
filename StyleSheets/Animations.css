@@ -15,10 +15,16 @@
 
 #image-fade-left{
     animation: image-left 1s;
+    -webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 #image-fade-right{
     animation: image-right 1s;
+    -webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 #header-fade-in{
