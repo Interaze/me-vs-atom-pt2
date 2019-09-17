@@ -32,6 +32,11 @@
 
         }
         else{
+            echo '<span class="holds" id="invis">';
+                echo '<div class="frame">';
+                    echo '<img class="projectimg" scr"../Images/'.$row["Image"].'">';
+                echo '</div>';
+            echo '</span>';
             echo '<span class="holds" id="text-in">';
                 echo '<div class="textbox">';
                     echo '<p>';

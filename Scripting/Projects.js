@@ -33,21 +33,13 @@ function ratioadj() {
   var h = window.innerHeight;
   var x = w/h;
   console.log(x);
-  if (x < .90) {
+  if (x < 1) {
 
-    if(x<.75){
-
-    }
-    else {
-
-    }
-
-}
-  else if (x > 2) {
+      document.getElementById("wrapper").className = "mobile";
 
   }
   else {
-
+      document.getElementById("wrapper").className = "desktop";
   }
 }
 

@@ -57,3 +57,42 @@
     position: relative;
     top: -50vh;
 }
+
+.mobile .panel{
+    display: block;
+}
+
+.mobile .panel span{
+    width: 100%;
+}
+
+.mobile .panel .textbox{
+    display: block;
+    padding: 20px;
+}
+
+.mobile .panel .textbox p{
+    font-size: calc(2vmin + 2vmax);
+}
+
+.mobile .panel span .frame{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.mobile .panel #image-fade-left{
+    background-color: rgb(0,0,0,.8);
+}
+
+.mobile .panel #image-fade-left{
+    background-color: rgb(0,0,0,.8);
+}
+
+#invis {
+    display: none;
+    background-color: rgb(0,0,0,.8);
+}
+
+.mobile .panel #invis{
+    display: block;
+}
