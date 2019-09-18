@@ -52,7 +52,7 @@ function triggers(){
 }
 
 function scrollprogTrig(){
-    var marker = document.getElementById("tml");
+    var marker = document.documentElement.scrollTop || document.body.scrollTop;
     var pageheight = Number(marker.scrollTop / window.innerHeight).toFixed(2);
     return(pageheight);
 }
