@@ -35,7 +35,6 @@ body{
     overflow: hidden;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-
 }
 
 .panel::after{

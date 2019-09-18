@@ -222,9 +222,9 @@ function changeslide(y){
 }
 
 function scrollprogTrig(){
-    var marker = document.getElementById("tml");
-    //console.log(ml.scrollTop / window.innerHeight);
-    var pageheight = Number(marker.scrollTop / window.innerHeight).toFixed(2);
+    var marker = document.documentElement.scrollTop || document.body.scrollTop;
+    var pageheight = Number(marker / window.innerHeight).toFixed(2);
+    //console.log(pageheight);
     return(pageheight);
 }
 
